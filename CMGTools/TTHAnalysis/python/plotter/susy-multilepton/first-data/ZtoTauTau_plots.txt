@@ -1,19 +1,19 @@
 #ELECTRONS
-#el_pt:  if3(abs(LepGood1_pdgId)==11, LepGood1_pt, LepGood2_pt): 40,0,100; XTitle="Leading electron p_{T}  [GeV]", Legend='TR', LegendCutoff=0
-#el_eta: if3(abs(LepGood1_pdgId)==11, LepGood1_eta, LepGood2_eta): 40,-2.5,2.5;    XTitle="Leading electron #eta", Legend='TR', LegendCutoff=0
-#el_iso:  if3(abs(LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 40,0.,0.5;  XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=0
-#el_iso_log:  if3(abs(LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 40,0.,0.5; Logy, XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=0
-#el_miniRelIso: if3(abs(LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=0
-#el_miniRelIso_log: if3(abs(LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; Logy, XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=0
-#el_sip3d:   if3(abs(LepGood1_pdgId)==11, LepGood1_sip3d, LepGood2_sip3d): 24,0,10 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=0
-#el_dxy:    if3(abs(LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=0
-#el_dxy_log:    if3(abs(LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=0
-#el_dz:    if3(abs(LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=0
-#el_dz_log:    if3(abs(LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=0
-#el_jetPtRel:  if3(abs(LepGood1_pdgId)==11, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=0
-#el_jetPtRatio: if3(abs(LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=0
-#el_SegmentCompatibility: if3(abs(LepGood1_pdgId)==11, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 40,-0.01,0.01; XTitle="Electron Segment-based compatibility", Legend='TR', LegendCutoff=0
-#el_mvaIdPhys14: if3(abs(LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=0
+el_pt:  if3(abs(LepGood1_pdgId)==11, LepGood1_pt, LepGood2_pt): 40,0,100; XTitle="Leading electron p_{T}  [GeV]", Legend='TR', LegendCutoff=0
+el_eta: if3(abs(LepGood1_pdgId)==11, LepGood1_eta, LepGood2_eta): 40,-2.5,2.5;    XTitle="Leading electron #eta", Legend='TR', LegendCutoff=0
+el_iso:  if3(abs(LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 40,0.,0.5;  XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=0
+el_iso_log:  if3(abs(LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 40,0.,0.5; Logy, XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=0
+el_miniRelIso: if3(abs(LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=0
+el_miniRelIso_log: if3(abs(LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; Logy, XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=0
+el_sip3d:   if3(abs(LepGood1_pdgId)==11, LepGood1_sip3d, LepGood2_sip3d): 24,0,10 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=0
+el_dxy:    if3(abs(LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=0
+el_dxy_log:    if3(abs(LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=0
+el_dz:    if3(abs(LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=0
+el_dz_log:    if3(abs(LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=0
+el_jetPtRel:  if3(abs(LepGood1_pdgId)==11, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=0
+el_jetPtRatio: if3(abs(LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=0
+el_SegmentCompatibility: if3(abs(LepGood1_pdgId)==11, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 40,-0.01,0.01; XTitle="Electron Segment-based compatibility", Legend='TR', LegendCutoff=0
+el_mvaIdPhys14: if3(abs(LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=0
 
 
 #MUONS

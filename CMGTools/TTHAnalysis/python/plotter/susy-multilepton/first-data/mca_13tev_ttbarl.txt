@@ -17,12 +17,12 @@ Tsch    : TToLeptons_sch:     xsec ;  FillColor=217
 
 # -- TTbar Backgrounds
 
-TT1j : TTJets_LO: xsec : LepGood3_mcMatchAny < 4 ;    FillColor=ROOT.kGreen-5, Label="tt\,+ j\#rightarrowl"
-TT1b : TTJets_LO: xsec : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\,+ b\#rightarrowl"
-TT1c : TTJets_LO: xsec : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\,+ c\#rightarrowl"
-TT2j : TTJets: xsec    : LepGood3_mcMatchAny < 4;      FillColor=ROOT.kGreen-5, Label="tt\, + j\#rightarrowl"
-TT2b : TTJets: xsec    : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\, + b\#rightarrowl"
-TT2c : TTJets: xsec    : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\, + c\#rightarrowl"
+TTTj : TTJets_LO: xsec : LepGood3_mcMatchAny < 4 ;    FillColor=ROOT.kGreen-5, Label="tt\,+ j\#rightarrowl"
+TTTb : TTJets_LO: xsec : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\,+ b\#rightarrowl"
+TTTc : TTJets_LO: xsec : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\,+ c\#rightarrowl"
+TTTj : TTJets: xsec    : LepGood3_mcMatchAny < 4;      FillColor=ROOT.kGreen-5, Label="tt\,+ j\#rightarrowl"
+TTTb : TTJets: xsec    : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\,+ b\#rightarrowl"
+TTTc : TTJets: xsec    : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\,+ c\#rightarrowl"
 
 
 

@@ -40,11 +40,3 @@ mu_mvaIdPhys14: if3((LepGood1_pdgId)==13, LepGood1_mvaIdPhys14, LepGood2_mvaIdPh
 #pt2l: pt2l: 60,0,150 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=0
 #thirdl_pt: LepGood3_pt: 40,0,100; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=0
 
-#MISCELLANEOUS
-#nJet25 : nJet25 : 8,0,8 ; XTitle='N(jet\, p_{T} > 25)',Logy,LegendCutoff=1e-3, YMin=100, YMax=1e8
-#nvtx: nVert: 40,0.5,40.5 ; XTitle="N(vertices)", Legend='TR'
-#met: met: 60,0,300    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3, YMin=50, YMax=1e7
-#metLD: met*0.00397 + mhtJet25*0.00265: 60,0,0.6    ; XTitle="E_{T}^{miss} LD",Logy,LegendCutoff=1e-3
-#mZ1_wide_log: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=0
-#mZ1_wide: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]", LegendCutoff=0
-#mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=0
