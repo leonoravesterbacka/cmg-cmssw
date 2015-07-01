@@ -14,8 +14,8 @@
 #el_jetPtRatio: if3(abs(LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=0
 #el_SegmentCompatibility: if3(abs(LepGood1_pdgId)==11, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 40,-0.01,0.01; XTitle="Electron Segment-based compatibility", Legend='TR', LegendCutoff=0
 #el_mvaIdPhys14: if3(abs(LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=0
-
-
+#
+#
 #MUONS
 #mu_pt:  if3(abs(LepGood1_pdgId)==13, LepGood1_pt, LepGood2_pt): 40,0,200; XTitle="Leading muon p_{T}  [GeV]", Legend='TR', LegendCutoff=0
 #mu_eta:  if3(abs(LepGood2_pdgId)==13, LepGood1_eta, LepGood2_eta): 40,-2.5,2.5;    XTitle="Leading muon #eta", Legend='TR', LegendCutoff=0
@@ -32,12 +32,12 @@
 #mu_jetPtRatio: if3(abs(LepGood1_pdgId)==13, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,2; XTitle="Muon Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=0
 #mu_SegmentCompatibility: if3(abs(LepGood1_pdgId)==13, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 40,0,2; XTitle="Muon Segment-based compatibility", Legend='TR', LegendCutoff=0
 #mu_mvaIdPhys14: if3(abs(LepGood1_pdgId)==13, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=0
-
+#
 #met: met: 60,0,150    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=0, 
 #mZ1_wide_log: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=0
 #mZ1_wide: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=0
 #mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=0
-pt2l: pt2l: 60,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=0
+#pt2l: pt2l: 60,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=0
 
 
 #MISCELLANEOUS

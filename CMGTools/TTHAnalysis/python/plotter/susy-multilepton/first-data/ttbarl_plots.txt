@@ -1,0 +1,21 @@
+met: met: 60,0,50    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3 
+mZ1_wide_log: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
+mZ1_wide: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+pt2l: pt2l: 60,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
+lep3_pt: LepGood3_pt: 40,0,50; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+lep3_sip3d: LepGood3_sip3d: 24,0,10 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=1e-3
+lep3_pt:  LepGood3_pt: 40,0,200; XTitle="Leading electron p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+lep3_eta: LepGood3_eta: 40,-2.5,2.5;    XTitle="Leading electron #eta", Legend='TR', LegendCutoff=1e-3
+lep3_iso:  LepGood3_relIso03: 40,0.,1.0;  XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=1e-3
+lep3_iso_log:        LepGood3_relIso03: 40,0.,1.0; Logy, XTitle="Leading Electron Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=1e-3
+lep3_miniRelIso:     LepGood3_miniRelIso: 20,0,.4; XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=1e-3
+lep3_miniRelIso_log: LepGood3_miniRelIso: 20,0,.4; Logy, XTitle="Leading Electron Isolation (miniRel)", LegendCutoff=1e-3
+lep3_dxy:            LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
+lep3_dxy_log:        LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Electron d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=1e-3
+lep3_dz:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-3
+lep3_dz_log:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=1e-3
+lep3_jetPtRel:  LepGood3_jetPtRel: 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-3
+lep3_jetPtRatio: LepGood3_jetPtRatio: 40,0,2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-3
+lep3_SegmentCompatibility: LepGood3_segmentCompatibility: 40,-0.01,0.01; XTitle="Electron Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
+lep3_mvaIdPhys14: LepGood3_mvaIdPhys14: 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
