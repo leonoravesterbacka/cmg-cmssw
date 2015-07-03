@@ -1,28 +1,26 @@
-#WZ
-WZ : WZp8: xsec ; FillColor=ROOT.kViolet-4
+# -- TTbar Backgrounds
 
-#ZZ
-ZZ 	 : ZZp8: xsec ;  Label="ZZ", FillColor=ROOT.kAzure-9
+
+TTTb : TTJets_LO: xsec : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt + b\#rightarrowl"
+TTTj : TTJets_LO: xsec : LepGood3_mcMatchAny < 4 ;    FillColor=ROOT.kGreen-5, Label="tt + j\#rightarrowl"
+TTTc : TTJets_LO: xsec : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGreen-9,    Label="tt + c\#rightarrowl"
+
+TW 	 : T_tWch:     xsec; FillColor=ROOT.kGray+2
+TW 	 : TBar_tWch:  xsec; FillColor=ROOT.kGray+2
 
 #DY 
 
 DY       : DYJetsToLL_M10to50: xsec    ;   FillColor=ROOT.kCyan
 DY       : DYJetsToLL_M50: xsec    ;   FillColor=ROOT.kCyan
 
-TW 	 : T_tWch:     xsec; FillColor=ROOT.kGray+2
-TW 	 : TBar_tWch:  xsec; FillColor=ROOT.kGray+2
-
 Ttch    : TToLeptons_tch:     xsec ;  FillColor=28
 Tsch    : TToLeptons_sch:     xsec ;  FillColor=217
 
-# -- TTbar Backgrounds
+#WZ
+WZ : WZp8: xsec ; FillColor=ROOT.kViolet-4
 
-TTTj : TTJets_LO: xsec : LepGood3_mcMatchAny < 4 ;    FillColor=ROOT.kGreen-5, Label="tt\,+ j\#rightarrowl"
-TTTb : TTJets_LO: xsec : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\,+ b\#rightarrowl"
-TTTc : TTJets_LO: xsec : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\,+ c\#rightarrowl"
-TTTj : TTJets: xsec    : LepGood3_mcMatchAny < 4;      FillColor=ROOT.kGreen-5, Label="tt\,+ j\#rightarrowl"
-TTTb : TTJets: xsec    : LepGood3_mcMatchAny == 5;    FillColor=ROOT.kGray,    Label="tt\,+ b\#rightarrowl"
-TTTc : TTJets: xsec    : LepGood3_mcMatchAny == 4;    FillColor=ROOT.kGray-5,    Label="tt\,+ c\#rightarrowl"
+#ZZ
+ZZ 	 : ZZp8: xsec ;  Label="ZZ", FillColor=ROOT.kAzure-9
 
 
 

@@ -1,11 +1,7 @@
 3L: nLepGood == 3 
 SF/OS: LepGood1_pdgId == -LepGood2_pdgId
 lep3_pt30: LepGood3_pt < 30
-#tightID: LepGood1_sip3d < 4 && LepGood1_relIso03 < 1 && LepGood2_sip3d < 4 && LepGood2_relIso03 < 1 
-mll > 12: minMllAFAS > 12
-Z peak: abs(mZ1-91.2) < 10
-mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi)
-met: met_pt < 30
+lep3_pt10: nLepGood10 == 3
 lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0 && \
          multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood2_jetPtRel,2) > 0
 lep mu id: LepGood1_mediumMuonId > 0 && LepGood2_mediumMuonId > 0
@@ -15,6 +11,10 @@ lep dxy: max(LepGood1_sip3d,LepGood2_sip3d) < 4
 ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits == 0)) && \
           (abs(LepGood2_pdgId) == 13 || (LepGood2_convVeto && LepGood2_lostHits == 0))
 tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) && LepGood2_tightCharge > (abs(LepGood2_pdgId) == 11)
+mll > 12: minMllAFAS > 12
+Z peak: abs(mZ1-91.2) < 10
+mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi)
+met: met_pt < 30
 
 
 

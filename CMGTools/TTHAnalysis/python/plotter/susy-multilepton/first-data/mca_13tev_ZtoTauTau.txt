@@ -12,15 +12,15 @@ Top    : TToLeptons_sch:     xsec ;  FillColor=ROOT.kGray
 # -- TTbar Backgrounds
 Top 	 : TTJets_LO: xsec ; FillColor=ROOT.kGray
 
+#WJets
+WJets    : WJetsToLNu :  xsec; FillColor=ROOT.kCyan+2
+
 #WZ
 WZ : WZp8: xsec ; FillColor=ROOT.kViolet-4
 
 #ZZ
 ZZ 	 : ZZp8: xsec ;  Label="ZZ", FillColor=ROOT.kAzure-9
 
-
-#WJets
-WJets    : WJetsToLNu :  xsec; FillColor=ROOT.kCyan+2
 
 
 

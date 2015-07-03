@@ -1,0 +1,23 @@
+#mZ1_wide_log: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
+#mZ1_wide: m2l: 60,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#pt2l: pt2l: 60,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
+#lep2_pt: LepGood2_pt: 40,0,50; XTitle="Trailing Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+#lep2_sip3d: LepGood2_sip3d: 24,0,10 ; XTitle="Trailing Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+#lep2_pt:  LepGood2_pt: 40,0,100; XTitle="Trailing Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep2_eta: LepGood3_eta: 40,-2.5,2.5;    XTitle="Trailing Lepton #eta", Legend='TR', LegendCutoff=1e-2
+#lep2_iso:  LepGood3_relIso03: 40,0.,1.0;  XTitle="Trailing Lepton Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=1e-3
+#lep2_iso_log:        LepGood3_relIso03: 40,0.,1.0; Logy, XTitle="Trailing Lepton Isolation (Rel Iso 0.3)", Legend='TR', LegendCutoff=1e-3
+lep2_miniRelIso:     LepGood2_miniRelIso: 24,0,.4; XTitle="Trailing Lepton Isolation", LegendCutoff=1e-2
+#lep2_miniRelIso_log: LepGood2_miniRelIso: 24,0,.4; Logy, XTitle="Trailing Lepton Isolation", LegendCutoff=1e-2
+#lep2_dxy:            LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Trailing Lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
+#lep2_dxy_log:        LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Trailing Lepton d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=1e-3
+#lep2_dz:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Trailing Lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-3
+#lep2_dz_log:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Trailing Lepton d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=1e-3
+#lep2_jetPtRel:  LepGood2_jetPtRel: 40,0,40; XTitle="Trailing Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep2_jetPtRatio: LepGood2_jetPtRatio: 40,0,2; XTitle="Trailing Lepton Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep2_SegmentCompatibility: LepGood3_segmentCompatibility: 40,-0.01,0.01; XTitle="Trailing Lepton Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
+#lep2_mvaIdPhys14: LepGood3_mvaIdPhys14: 40,-2,2; XTitle="Trailing Lepton mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
+#mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 18,0,200; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-2
+#worstRelIso: max(LepGood1_relIso03,LepGood2_relIso03): 24,0.0,0.4 ; XTitle="Worst rel iso (I_{1}\, I_{2}\, I_{3})", Legend="TR",LegendCutoff=1e-3
+#mtw_wz3l: mtw_wz3l(LepGood1_pt, LepGood1_eta, LepGood1_phi, LepGood1_m, LepGood2_pt, LepGood2_eta, LepGood2_phi, LepGood2_m, LepGood3_pt, LepGood3_eta, LepGood3_phi, LepGood3_m, mZ1, met, met_phi): 40,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV]",Legend='TR', LegendCutoff=1e-3

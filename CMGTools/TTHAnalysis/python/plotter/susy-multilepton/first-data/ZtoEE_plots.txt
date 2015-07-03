@@ -1,0 +1,28 @@
+#el_pt:  if3((LepGood1_pdgId)==11, LepGood1_pt, LepGood2_pt): 40,0,150; XTitle="Electron p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+#el_eta:  if3((LepGood1_pdgId)==11, LepGood1_eta, LepGood2_eta): 40,-2.5,2.5;    XTitle="Electron #eta", Legend='TR', LegendCutoff=1e-3
+#el_iso: if3((LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 20,0,.4; XTitle="Electron Isolation", LegendCutoff=1e-3
+#el_iso_log: if3((LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 20,0,.4; Logy, XTitle="Electron Isolation", LegendCutoff=0
+el_miniRelIso: if3((LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; XTitle="Electron Isolation", LegendCutoff=1e-3
+el_miniRelIso_log: if3((LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; Logy, XTitle="Electron Isolation", LegendCutoff=0
+el_sip3d:   if3((LepGood1_pdgId)==11, LepGood2_sip3d, LepGood2_sip3d): 50,0,5 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=1e-3
+#el_dxy:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
+#el_dxy_log:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Electron d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-3
+#el_dz:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-3
+#el_dz_log:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-3
+el_jetPtRel:  if3((LepGood1_pdgId)==11, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-3
+el_jetPtRatio: if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-3
+#el_SegmentCompatibility: if3((LepGood1_pdgId)==11, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 40,0,2; XTitle="Electron Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
+#el_mvaIdPhys14: if3((LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-2,2; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
+
+
+
+#met: met: 60,0,100    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3 
+#mZ1_wide_log: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
+#mZ1_wide: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#pt2l: pt2l: 60,0,150 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
+#thirdl_pt: LepGood3_pt: 40,0,100; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+#mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 18,0,200; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV],"Legend='TR', LegendCutoff=1e-3
+#worstRelIso: max(LepGood1_relIso,LepGood2_relIso): 24,0.0,0.4 ; XTitle="Worst lepRelIso", Legend="TR",LegendCutoff=1e-3
+#mtw_wz3l: mtw_wz3l(pt1, eta1, phi1, m1, pt2, eta2, phi2, m2, pt3, eta3, phi3, m3, mZ1, met, metphi): 18,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV],"Legend='TR', LegendCutoff=1e-3
+

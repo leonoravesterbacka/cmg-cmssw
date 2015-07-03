@@ -16,7 +16,7 @@ Tsch    : TToLeptons_sch:     xsec ;  FillColor=217
 
 # -- TTbar Backgrounds
 TT 	 : TTJets_LO: xsec ; FillColor=ROOT.kGray
-TT 	 : TTJets: xsec ; FillColor=ROOT.kGray
+
 
 
 #WJets
