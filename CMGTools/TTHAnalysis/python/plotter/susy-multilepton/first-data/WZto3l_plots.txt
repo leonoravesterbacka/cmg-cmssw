@@ -21,5 +21,5 @@
 #lep3_mvaIdPhys14: LepGood3_mvaIdPhys14: 40,-2,2; XTitle="Third Lepton mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
 #mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 18,0,200; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV],"Legend='TR', LegendCutoff=1e-3
 #worstRelIso: max(LepGood1_relIso03,LepGood2_relIso03): 24,0.0,0.4 ; XTitle="Worst rel iso (I_{1}\, I_{2}\, I_{3})", Legend="TR",LegendCutoff=1e-3
-mtW:  mtw_wz3l(LepGood1_pt,LepGood1_eta,LepGood1_phi,LepGood1_mass,LepGood2_pt,LepGood2_eta,LepGood2_phi,LepGood2_mass,LepGood3_pt,LepGood3_eta,LepGood3_phi,LepGood3_mass,mZ1,met,met_phi) : 36,0,180 ; XTitle="M_{T}(W#rightarrowlv) [GeV]",Legend='TR', LegendCutoff=1e-3
+mtW:  mtw_wz3l(LepGood1_pt,LepGood1_eta,LepGood1_phi,LepGood1_mass,LepGood2_pt,LepGood2_eta,LepGood2_phi,LepGood2_mass,LepGood3_pt,LepGood3_eta,LepGood3_phi,LepGood3_mass,mZ1,met_pt,met_phi) : 36,0,180 ; XTitle="M_{T}(W#rightarrowlv) [GeV]",Legend='TR', LegendCutoff=1e-3
 
