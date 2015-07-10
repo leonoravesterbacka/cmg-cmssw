@@ -1,0 +1,29 @@
+
+#DY 
+#DY       : DYJetsToLL_M10to50: 915    ;   FillColor=ROOT.kCyan
+#DY       : DYJetsToLL_M50: 3503.7     ;   FillColor=ROOT.kCyan
+DY       : DYJetsToLL_M50_50ns: xsec     ;   FillColor=ROOT.kCyan
+ 
+#Top 	 : T_tWch:     56.4; FillColor=ROOT.kGray
+#Top 	 : TBar_tWch:  30.7; FillColor=ROOT.kGray
+#
+#Top    : TToLeptons_tch:     25.77 ;  FillColor=ROOT.kGray
+##Top    : TToLeptons_sch:     25.77 ;  FillColor=ROOT.kGray
+#
+## -- TTbar Backgrounds
+#Top 	 : TTJets_LO: 245.59 ; FillColor=ROOT.kGray
+#
+##WZ
+#WZ : WZp8: 1.057*1.10 ; FillColor=ROOT.kViolet-4
+#
+##ZZ
+#ZZ 	 : ZZp8: 0.157 ;  Label="ZZ", FillColor=ROOT.kAzure-9
+#
+#
+##WJets
+#WJets    : WJetsToLNu :  37509.0; FillColor=ROOT.kCyan+2
+
+
+
+# --- DATA
+data     : ExpressPhysics_251244_251252

@@ -1,0 +1,27 @@
+trigger: HLT_SingleMu_8TeV
+2L: nLepGood == 2 
+lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0  
+nJet/bJet: nJet40 == 4 && nBJetMedium25 == 1 || nJet40 == 4 && nBJetMedium25 == 2 || nJet40 == 3 && nBJetMedium25 == 1 || nJet40 == 3 && nBJetMedium25 == 2     
+lep2_pt10: nLepGood10 == 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

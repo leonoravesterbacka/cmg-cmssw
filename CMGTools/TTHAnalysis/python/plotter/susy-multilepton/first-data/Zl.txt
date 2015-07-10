@@ -13,7 +13,7 @@ ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits 
 tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) && LepGood2_tightCharge > (abs(LepGood2_pdgId) == 11)
 mll > 12: minMllAFAS > 12
 Z peak: abs(mZ1-91.2) < 10
-mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi)
+mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi) < 40 
 met: met_pt < 30
 
 

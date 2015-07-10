@@ -1,5 +1,6 @@
 2L: nLepGood10 == 2 
-OF/OS: abs(LepGood1_pdgId+LepGood2_pdgId)==2 
+#OF/OS: abs(LepGood1_pdgId+LepGood2_pdgId)==2 
+OS: LepGood1_pdgId == -LepGood2_pdgId || abs(LepGood1_pdgId+LepGood2_pdgId)==2  
 pt2010: LepGood1_pt>20 && LepGood2_pt>10
 mll > 12: minMllAFAS > 12
 nJet40: nJet40 >= 2

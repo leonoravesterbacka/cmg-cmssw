@@ -1,6 +1,7 @@
 3L: nLepGood >= 3 
 OF/OS: abs(LepGood1_pdgId+LepGood2_pdgId)==2
 lep3_pt30: LepGood3_pt < 30
+lep3_pt10: nLepGood10 == 3
 lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0 && \
          multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood2_jetPtRel,2) > 0
 lep mu id: LepGood1_mediumMuonId > 0 && LepGood2_mediumMuonId > 0
