@@ -1,0 +1,21 @@
+
+
+
+#nvtx: nVert: 24,0.5,40.5 ; XTitle="N(vertices)", Legend='TR',LegendCutoff=1e-2
+met: met: 24,0,300    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-2 
+##mZ1_wide_log: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
+#mZ1: mZ1: 24,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 24,0,300; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-2
+#bestMWjj: bestMWjj: 24, 0, 200; XTitle="best m(W#rightarrowjj) [GeV]" , Legend='TR', LegendCutoff=1e-3
+#bestMTopHad: bestMTopHad: 24, 0, 350; XTitle="best m(t#rightarrowjjb) [GeV]", Legend='TR', LegendCutoff=1e-3
+#worstRelIso: max(LepGood1_relIso03,LepGood2_relIso03): 24,0.0,0.4 ; XTitle="Worst lepRelIso", Legend="TR",LegendCutoff=1e-3
+##mtw_wz3l: mtw_wz3l(pt1, eta1, phi1, m1, pt2, eta2, phi2, m2, pt3, eta3, phi3, m3, mZ1, met, metphi): 24,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV],"Legend='TR', LegendCutoff=1e-3
+##pt2l: pt2l: 24,0,150 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
+##thirdl_pt: LepGood3_pt: 24,0,100; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+#nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR', LegendCutoff=1e-2
+#nBJetMedium25 : nBJetMedium25 : 8,-0.5,7.5 ; XTitle='N(bJet\, p_{T} > 25 \,medium)', Legend='TR', LegendCutoff=1e-2
+#nBJetMedium40 : nBJetMedium40 : 8,-0.5,7.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR', LegendCutoff=1e-2
+#nBJetLoose25 : nBJetLoose25 : 8,-0.5,7.5 ; XTitle='N(bJet\, p_{T} > 25 \,loose)', Legend='TR', LegendCutoff=1e-2
+#nBJetMedium40 : nBJetLoose40 : 8,-0.5,7.5 ; XTitle='N(bJet\, p_{T} > 40\, loose)', Legend='TR', LegendCutoff=1e-2
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR', LegendCutoff=1e-2
+htJet40j: htJet40j: 24,0,800; XTitle="H_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2

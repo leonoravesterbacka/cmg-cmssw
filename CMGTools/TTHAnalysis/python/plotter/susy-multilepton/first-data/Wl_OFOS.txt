@@ -1,8 +1,7 @@
-Trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG
-3L: nLepGood == 3 
-SF/OS: LepGood1_pdgId == -LepGood2_pdgId
-lep3_pt30: LepGood3_pt < 50
-lep3_pt10: nLepGood10 == 3
+Trigger: HLT_SingleMu50ns || HLT_SingleEl50ns 
+2L: nLepGood == 2 
+OF/OS: abs(LepGood1_pdgId+LepGood2_pdgId)==2 
+lep2_pt10: nLepGood10 == 2
 #lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0 && \
 #         multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood2_jetPtRel,2) > 0
 #lep mu id: LepGood1_mediumMuonId > 0 && LepGood2_mediumMuonId > 0
@@ -12,10 +11,36 @@ lep3_pt10: nLepGood10 == 3
 #ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits == 0)) && \
 #          (abs(LepGood2_pdgId) == 13 || (LepGood2_convVeto && LepGood2_lostHits == 0))
 #tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) && LepGood2_tightCharge > (abs(LepGood2_pdgId) == 11)
-mll > 12: minMllAFAS > 12
-Z peak: abs(mZ1-91.2) < 15
-mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi) < 55
-met: met_pt < 60
+Z peak: abs(mZ1-91.2) > 15
+pt2l: pt2l > 20
+relIso: LepGood1_relIso03 < 0.15
+miniIso: LepGood1_miniRelIso < 0.15
+dPhi: abs(deltaPhi(LepGood1_phi,LepGood2_phi)) < 2.0     
+#nJet30: nJet30 == 0     
+nJet40: nJet40 == 0     
+#nBJetLoose25: nBJetLoose25 <= 1
+nBJetMedium25: nBJetMedium25 == 0
+#nBJetLoose25: nBJetLoose25 == 0  
+#mt_2: mt_2(LepGood1_pt, LepGood1_phi, met_pt, met_phi) > 40
+#met: met_pt > 50 
+#mll > 12: minMllAFAS > 12
+mu2: abs(LepGood2_pdgId) == 13
+el2: abs(LepGood2_pdgId) == 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,38 @@
+
+#DY 
+DY       : DYJetsToLL_M50_50ns_PUflat1050: xsec     ;   FillColor=ROOT.kCyan
+ 
+#Top 	 : T_tWch:     56.4; FillColor=ROOT.kGray
+#Top 	 : TBar_tWch:  30.7; FillColor=ROOT.kGray
+#
+#Top    : TToLeptons_tch:     25.77 ;  FillColor=ROOT.kGray
+##Top    : TToLeptons_sch:     25.77 ;  FillColor=ROOT.kGray
+#
+## -- TTbar Backgrounds
+#Top 	 : TTJets_LO: 245.59 ; FillColor=ROOT.kGray
+#
+##WZ
+#WZ : WZp8: 1.057*1.10 ; FillColor=ROOT.kViolet-4
+#
+##ZZ
+#ZZ 	 : ZZp8: 0.157 ;  Label="ZZ", FillColor=ROOT.kAzure-9
+#
+#
+##WJets
+#WJets    : WJetsToLNu :  37509.0; FillColor=ROOT.kCyan+2
+
+
+
+# --- DATA
+#data     : SingleMu_742
+#data     : DoubleEG_Run2015B_v1_run_251244
+#data     : DoubleEG_Run2015B_v1_runs_251251_251252
+#data     : DoubleMuon_Run2015B_v1_run_251244
+#data     : DoubleMuon_Run2015B_v1_runs_251251_251252
+#data     : MuonEG_Run2015B_v1_run_251244
+#data     : MuonEG_Run2015B_v1_runs_251251_251252
+#data     : SingleElectron_Run2015B_v1_run_251244
+#data     : SingleElectron_Run2015B_v1_runs_251251_251252
+#data     : SingleMuon_Run2015B_v1_run_251244
+#data     : SingleMuon_Run2015B_v1_runs_251251_251252
+data     : ReRecoNewAlignment_251168

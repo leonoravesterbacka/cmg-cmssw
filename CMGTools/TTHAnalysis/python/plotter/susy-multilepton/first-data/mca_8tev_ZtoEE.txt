@@ -2,7 +2,7 @@
 #DY 
 #DY       : DYJetsToLL_M10to50: 915    ;   FillColor=ROOT.kCyan
 #DY       : DYJetsToLL_M50: 3503.7     ;   FillColor=ROOT.kCyan
-DY       : DYJetsToLL_M50_50ns: xsec     ;   FillColor=ROOT.kCyan
+DY       : DYJetsToLL_M50_50ns: 3503.7     ;   FillColor=ROOT.kCyan
  
 #Top 	 : T_tWch:     56.4; FillColor=ROOT.kGray
 #Top 	 : TBar_tWch:  30.7; FillColor=ROOT.kGray

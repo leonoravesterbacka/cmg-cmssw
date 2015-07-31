@@ -1,10 +1,14 @@
+el_trigger: HLT_SingleEl50ns
+mu_trigger: HLT_SingleMu50ns
 2L OF/OS: nLepGood >= 2 && abs(LepGood1_pdgId+LepGood2_pdgId)==2
 lep3_pt10: nLepGood10 == 2
 met: met_pt < 30
 pt2l: pt2l < 20
 mll[20,80] : 20 < minMllAFOS && minMllAFOS < 80
-#el_tight:  abs(LepGood1_pdgId) == 11 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 25  && abs(LepGood1_eta) < 1.479 && LepGood1_sip3d < 1.5 || abs(LepGood2_pdgId) == 11 &&  LepGood2_relIso03 < 0.1 && LepGood2_pt > 25  && abs(LepGood2_eta) < 1.479 && LepGood2_sip3d < 1.5
-mu_tight: abs(LepGood1_pdgId) == 13 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 25  && abs(LepGood1_eta) < 1.2   && LepGood1_sip3d < 1.5 || abs(LepGood2_pdgId) == 13 &&  LepGood2_relIso03 < 0.1 && LepGood2_pt > 25  && abs(LepGood2_eta) < 1.2   && LepGood2_sip3d < 1.5
+#el_tight: abs(LepGood1_pdgId) == 11 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 30  && abs(LepGood1_eta) < 1.479 && LepGood1_sip3d < 1.5  || abs(LepGood2_pdgId) == 11 &&  LepGood2_relIso03 < 0.1 && LepGood2_pt > 25  && abs(LepGood2_eta) < 1.479 && LepGood2_sip3d < 1.5
+#mu_tight: abs(LepGood1_pdgId) == 13 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 20  && abs(LepGood1_eta) < 1.2   && LepGood1_sip3d < 1.5  || abs(LepGood2_pdgId) == 13 &&  LepGood2_relIso03 < 0.1 && LepGood2_pt > 25  && abs(LepGood2_eta) < 1.2   && LepGood2_sip3d < 1.5
+el_tight: abs(LepGood1_pdgId) == 11 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 30  && abs(LepGood1_eta) < 1.479 && LepGood1_sip3d < 1.5  
+mu_tight: abs(LepGood1_pdgId) == 13 &&  LepGood1_relIso03 < 0.1 && LepGood1_pt > 20  && abs(LepGood1_eta) < 1.2   && LepGood1_sip3d < 1.5  
 
 
 

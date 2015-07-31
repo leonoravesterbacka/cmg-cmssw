@@ -26,4 +26,16 @@ DY       : DYJetsToLL_M50_50ns: xsec     ;   FillColor=ROOT.kCyan
 
 
 # --- DATA
-data     : ExpressPhysics_251244_251252
+#data     : ExpressPhysics_251244_251252
+#data     : SingleMuon_251168
+
+data     : DoubleEG_Run2015B_v1_run_251244
+data     : DoubleEG_Run2015B_v1_runs_251251_251252
+data     : DoubleMuon_Run2015B_v1_run_251244
+data     : DoubleMuon_Run2015B_v1_runs_251251_251252
+data     : MuonEG_Run2015B_v1_run_251244
+data     : MuonEG_Run2015B_v1_runs_251251_251252
+data     : SingleElectron_Run2015B_v1_run_251244
+data     : SingleElectron_Run2015B_v1_runs_251251_251252
+data     : SingleMuon_Run2015B_v1_run_251244
+data     : SingleMuon_Run2015B_v1_runs_251251_251252

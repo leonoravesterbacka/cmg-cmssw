@@ -1,0 +1,27 @@
+trigger: HLT_SingleMu50ns
+2L: nLepGood == 2 
+OF/OS: LepGood1_pdgId == -LepGood2_pdgId || abs(LepGood1_pdgId+LepGood2_pdgId)==2 
+nJet40: nJet40 == 2
+lep2_pt10: nLepGood10 == 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

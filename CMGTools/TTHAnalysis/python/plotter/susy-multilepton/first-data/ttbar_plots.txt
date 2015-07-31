@@ -1,41 +1,45 @@
-###MUONS 
-#lep_pt:             	 LepGood2_pt: 40,0,150; XTitle="Subleading lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
-#lep_eta:            	 LepGood2_eta: 40,-2.5,2.5;    XTitle="Subleading lepton #eta", Legend='TR', LegendCutoff=1e-3
-#lep_iso:            	 LepGood2_relIso03: 20,0,.4; XTitle="Subleading lepton Isolation", LegendCutoff=1e-3
-#lep_iso_log:        	 LepGood2_relIso03): 20,0,.4; Logy, XTitle="Subleading lepton Isolation", LegendCutoff=0
-#lep_iso_chargedHad:           LepGood2_miniRelIsoCharged: 20,0,.4; XTitle="Subleading lepton Isolation Charged Hadron", LegendCutoff=1e-3
-#lep_iso_chargedHad_log:       LepGood2_miniRelIsoCharged: 20,0,.4; Logy, XTitle="Subleading lepton Isolation Charged Hadron", LegendCutoff=1e-5
-#lep_iso_neutralHad:           LepGood2_miniRelIsoNeutral: 20,0,.4; XTitle="Subleading lepton Isolation Neutral Hadron", LegendCutoff=1e-3
-#lep_iso__neutralHad_log:      LepGood2_miniRelIsoNeutral: 20,0,.4; Logy, XTitle="Subleading lepton Isolation Neutral Hadron", LegendCutoff=1e-5
-lep_miniRelIso:    	 LepGood2_miniRelIso: 20,0,.4; XTitle="Subleading lepton Isolation", LegendCutoff=1e-3
-lep_miniRelIso_log:	 LepGood2_miniRelIso: 20,0,.4; Logy, XTitle="Subleading lepton Isolation", LegendCutoff=1e-4
-lep_sip3d:         	 LepGood2_sip3d: 50,0,10 ; XTitle="Subleading lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-3
-#lep_dxy:           	abs( LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Subleading lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
-#lep_dxy_log:       	abs( LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Subleading lepton d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-3
-#lep_dz:            	abs( LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Subleading lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-3
-#lep_dz_log:        	abs( LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Subleading lepton d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-3
-#lep_jetPtRelv0:    	LepGood2_jetPtRelv0: 40,0,5; XTitle="Subleading lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-3
-lep_jetPtRel:      	LepGood2_jetPtRel: 40,0,40; XTitle="Subleading lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-3
-lep_jetPtRatio:    	LepGood2_jetPtRatio: 40,0,2; XTitle="Subleading lepton Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-3
-lep_SegmentCompatibility: LepGood2_segmentCompatibility: 40,0,2; XTitle="Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
+lep1_pt:             	 LepGood1_pt: 24,0,150; XTitle="Leading lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep1_eta:            	 LepGood1_eta: 24,-2.5,2.5;    XTitle="Leading lepton #eta", Legend='TR', LegendCutoff=1e-2
+lep1_iso:            	 LepGood1_relIso03: 24,0,.4; XTitle="Leading lepton Isolation", LegendCutoff=1e-3
+lep1_iso_log:        	 LepGood1_relIso03: 24,0,.4; Logy, XTitle="Leading lepton Isolation", LegendCutoff=0
+lep1_miniRelIso:    	 LepGood1_miniRelIso: 24,0,.4; XTitle="Leading lepton Isolation", LegendCutoff=1e-2
+lep1_miniRelIso_log:	 LepGood1_miniRelIso: 24,0,.4; Logy, XTitle="Leading lepton Isolation", LegendCutoff=1e-3
+lep1_sip3d:         	 LepGood1_sip3d: 24,0,5 ; XTitle="Leading lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep1_sip3d_wide:         	 LepGood1_sip3d: 24,0,10 ; XTitle="Leading lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep1_dxy:           	abs( LepGood1_dxy)*10000: 24,0.0,100. ; XTitle="Leading lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep1_dxy_wide:           	abs( LepGood1_dxy)*10000: 24,0.0,500. ; XTitle="Leading lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep1_dxy_log:       	abs( LepGood1_dxy)*10000: 24,0.0,100. ; XTitle="Leading lepton d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-3
+lep1_dz:            	abs( LepGood1_dz)*10000: 24,0.0,500. ; XTitle="Leading lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep1_dz_wide:            	abs( LepGood1_dz)*10000: 24,0.0,1000. ; XTitle="Leading lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep1_dz_log:        	abs( LepGood1_dz)*10000: 24,0.0,600. ; XTitle="Leading lepton d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-3
+lep1_jetPtRel:      	LepGood1_jetPtRel: 24,0,40; XTitle="Leading lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep1_jetPtRatio:    	LepGood1_jetPtRatio: 24,0,1.2; XTitle="Leading lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
 
-
-#lep_mvaIdPhys14:  LepGood2_mvaIdPhys14: 40,-2,2; XTitle="mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
-#lep_pixelLayers:  LepGood2_pixelLayers: 40,0,10; XTitle="Pixel Layers", Legend='TR', LegendCutoff=1e-3
-#lep_trackerLayers:LepGood2_trackerLayers: 40,0,30; XTitle="Tracker Layers", Legend='TR', LegendCutoff=1e-3
-#lep_lostHits:     LepGood2_lostHits: 40,-5,10; XTitle="Lost hits on inner track", Legend='TR', LegendCutoff=1e-3
-
-
-
-nvtx: nVert: 40,0.5,40.5 ; XTitle="N(vertices)", Legend='TR'
-#met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3 
-#mZ1_wide_log: m2l: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
-#mZ1: m2l: 60,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
-#mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 18,0,300; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-3
-#bestMWjj: bestMWjj: 18, 0, 200; XTitle="best m(W#rightarrowjj) [GeV]" , Legend='TR', LegendCutoff=1e-3
-#bestMTopHad: bestMTopHad: 30, 0, 350; XTitle="best m(t#rightarrowjjb) [GeV]", Legend='TR', LegendCutoff=1e-3
-#worstRelIso: max(LepGood1_relIso03,LepGood2_relIso03): 24,0.0,0.4 ; XTitle="Worst lepRelIso", Legend="TR",LegendCutoff=1e-3
-#mtw_wz3l: mtw_wz3l(pt1, eta1, phi1, m1, pt2, eta2, phi2, m2, pt3, eta3, phi3, m3, mZ1, met, metphi): 18,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV],"Legend='TR', LegendCutoff=1e-3
-#pt2l: pt2l: 60,0,150 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
-#thirdl_pt: LepGood3_pt: 40,0,100; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+#
+lep2_pt:             	 LepGood2_pt: 24,0,150; XTitle="Subleading lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep2_eta:            	 LepGood2_eta: 24,-2.5,2.5;    XTitle="Subleading lepton #eta", Legend='TR', LegendCutoff=1e-2
+lep2_iso:            	 LepGood2_relIso03: 24,0,.4; XTitle="Subleading lepton Isolation", LegendCutoff=1e-3
+lep2_iso_log:        	 LepGood2_relIso03: 24,0,.4; Logy, XTitle="Subleading lepton Isolation", LegendCutoff=0
+lep2_miniRelIso:    	 LepGood2_miniRelIso: 24,0,.4; XTitle="Subleading lepton Isolation", LegendCutoff=1e-2
+lep2_miniRelIso_log:	 LepGood2_miniRelIso: 24,0,.4; Logy, XTitle="Subleading lepton Isolation", LegendCutoff=1e-3
+lep2_sip3d:         	 LepGood2_sip3d: 24,0,5 ; XTitle="Subleading lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep2_sip3d_wide:         	 LepGood2_sip3d: 24,0,10 ; XTitle="Subleading lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep2_dxy:           	abs( LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Subleading lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep2_dxy_wide:           	abs( LepGood2_dxy)*10000: 24,0.0,500. ; XTitle="Subleading lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep2_dxy_log:       	abs( LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Subleading lepton d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-3
+lep2_dz:            	abs( LepGood2_dz)*10000: 24,0.0,500. ; XTitle="Subleading lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep2_dz_wide:            	abs( LepGood2_dz)*10000: 24,0.0,1000. ; XTitle="Subleading lepton d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+lep2_dz_log:        	abs( LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Subleading lepton d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-3
+lep2_jetPtRel:      	LepGood2_jetPtRel: 24,0,40; XTitle="Subleading lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep2_jetPtRatio:    	LepGood2_jetPtRatio: 24,0,1.2; XTitle="Subleading lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+#lep_SegmentCompatibility: LepGood2_segmentCompatibility: 24,0,1; XTitle="Segment-based compatibility", Legend='TL', LegendCutoff=1e-2
+#lep_SegmentCompatibility_log: LepGood2_segmentCompatibility: 24,0,1; XTitle="Segment-based compatibility", Logy, Legend='TL', LegendCutoff=1e-2
+##
+##
+#lep_mvaIdPhys14:  LepGood2_mvaIdPhys14: 24,-1,1; XTitle="mvaIdPhys14", Legend='TL', LegendCutoff=1e-2
+#lep_mvaIdPhys14_log:  LepGood2_mvaIdPhys14: 24,-1,1; XTitle="mvaIdPhys14", Logy, Legend='TL', LegendCutoff=1e-2
+lep2_pixelLayers:  LepGood2_pixelLayers: 24,0,10; XTitle="Pixel Layers", Legend='TR', LegendCutoff=1e-2
+lep2_trackerLayers:LepGood2_trackerLayers: 24,0,20; XTitle="Tracker Layers", Legend='TL', LegendCutoff=1e-2
+lep2_lostHits:     LepGood2_lostHits: 24,-5,10; XTitle="Lost hits on inner track", Legend='TL', LegendCutoff=1e-2
+#
 

@@ -1,0 +1,18 @@
+##MUONS 
+mu1_pt_log:             LepGood1_pt: 40,20,200; XTitle="Leading Muon p_{T} [GeV]",Logy, Legend='TR', LegendCutoff=1e-5, IncludeOverflows=False
+mu1_pt:             LepGood1_pt: 40,20,200; XTitle="Leading Muon p_{T} [GeV]", Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+#mu2_pt_log:             LepGood2_pt: 40,0,150; XTitle="Subleading Muon p_{T} [GeV]",Logy, Legend='TR', LegendCutoff=1e-5, IncludeOverflows=False
+#mu2_pt:             LepGood2_pt: 40,0,150; XTitle="Subleading Muon p_{T} [GeV]", Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+mu1_eta:            LepGood1_eta: 40,-2.4,2.4;    XTitle="Leading Muon #eta", Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+mu1_eta_log:            LepGood1_eta: 40,-2.4,2.4;    XTitle="Leading Muon #eta", Logy, Legend='TR', YMin=1, YMax=100000, LegendCutoff=1e-5, IncludeOverflows=False
+#mu2_eta:            LepGood2_eta: 40,-2.4,2.4;    XTitle="Subleading Muon #eta", Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+#mu2_eta_log:            LepGood2_eta: 40,-2.4,2.4;    XTitle="Subleading Muon #eta",Logy, YMin=1, YMax=100000, Legend='TR', LegendCutoff=1e-5, IncludeOverflows=False
+
+
+#mZ1_wide_log: mZ1: 60,60,500 ;  XTitle="m(#mu^{+}#mu^{-}) [GeV]",Legend='TR',Logy,LegendCutoff=1e-4
+#mZ1_wide: mZ1: 60,60,500 ; XTitle="m(#mu^{+}#mu^{-}) [GeV]",Legend='TR',LegendCutoff=1e-2
+mZ1_log: mZ1: 40,60,120 ; XTitle="m(#mu^{+}#mu^{-}) [GeV]",Legend='TR',Logy, LegendCutoff=0.0005, IncludeOverflows=False
+mZ1: mZ1: 40,60,120 ; XTitle="m(#mu^{+}#mu^{-}) [GeV]", Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+pt2l: pt2l: 40,0,200 ; XTitle="di-muon p_{T} [GeV]",Legend='TR', LegendCutoff=1e-2, IncludeOverflows=False
+pt2l_log: pt2l: 40,0,200 ; XTitle="di-muon p_{T} [GeV]",Logy, Legend='TR', LegendCutoff=1e-5, IncludeOverflows=False
+

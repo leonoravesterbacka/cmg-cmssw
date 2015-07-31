@@ -1,28 +1,53 @@
 
 #DY 
-DY       : DYJetsToLL_M10to50: xsec    ;   FillColor=ROOT.kCyan
-DY       : DYJetsToLL_M50: xsec    ;   FillColor=ROOT.kCyan
-
-Top 	 : T_tWch:     xsec; FillColor=ROOT.kGray
-Top 	 : TBar_tWch:  xsec; FillColor=ROOT.kGray
-
-Top    : TToLeptons_tch:     xsec ;  FillColor=ROOT.kGray
-Top    : TToLeptons_sch:     xsec ;  FillColor=ROOT.kGray
-
-# -- TTbar Backgrounds
-Top 	 : TTJets_LO: xsec ; FillColor=ROOT.kGray
-
-#WJets
-WJets    : WJetsToLNu :  xsec; FillColor=ROOT.kCyan+2
-
-#WZ
-WZ : WZp8: xsec ; FillColor=ROOT.kViolet-4
-
-#ZZ
-ZZ 	 : ZZp8: xsec ;  Label="ZZ", FillColor=ROOT.kAzure-9
-
+DY       :  DYJetsToLL_M10to50_50ns: xsec    ;   FillColor=ROOT.kCyan
+DY       : DYJetsToLL_M50_50ns: xsec     ;   FillColor=ROOT.kCyan
+ 
+#Top 	 : T_tWch:     56.4; FillColor=ROOT.kGray
+#Top 	 : TBar_tWch:  30.7; FillColor=ROOT.kGray
+#
+#Top    : TToLeptons_tch:     25.77 ;  FillColor=ROOT.kGray
+##Top    : TToLeptons_sch:     25.77 ;  FillColor=ROOT.kGray
+#
+## -- TTbar Backgrounds
+TT : TTJets_LO_50ns: xsec ;  FillColor=ROOT.kGray  
+#
+##WZ
+#WZ : WZp8: 1.057*1.10 ; FillColor=ROOT.kViolet-4
+#
+##ZZ
+#ZZ 	 : ZZp8: 0.157 ;  Label="ZZ", FillColor=ROOT.kAzure-9
+#
+#
+##WJets
+WJets    : WJetsToLNu_50ns :  xsec; FillColor=ROOT.kCyan+2
 
 
 
 # --- DATA
-#data     : SingleMu_742
+
+#data	  : DoubleEG_Run2015B_v1_run_251244              
+#data	  : DoubleEG_Run2015B_v1_run_251560              
+#data	  : DoubleEG_Run2015B_v1_run_251561              
+#data	  : DoubleEG_Run2015B_v1_run_251562              
+#data	  : DoubleEG_Run2015B_v1_runs_251251_251252      
+#data	  : DoubleMuon_Run2015B_v1_run_251244            
+#data	  : DoubleMuon_Run2015B_v1_run_251560            
+#data	  : DoubleMuon_Run2015B_v1_run_251561            
+#data	  : DoubleMuon_Run2015B_v1_run_251562            
+#data	  : DoubleMuon_Run2015B_v1_runs_251251_251252  
+#data	  : MuonEG_Run2015B_v1_run_251244                
+#data	  : MuonEG_Run2015B_v1_run_251560                
+#data	  : MuonEG_Run2015B_v1_run_251561                
+#data	  : MuonEG_Run2015B_v1_run_251562                      
+#data	  : MuonEG_Run2015B_v1_runs_251251_251252        
+#data	  : SingleElectron_Run2015B_v1_run_251244        
+#data	  : SingleElectron_Run2015B_v1_run_251560        
+#data	  : SingleElectron_Run2015B_v1_run_251561        
+#data	  : SingleElectron_Run2015B_v1_run_251562        
+#data	  : SingleElectron_Run2015B_v1_runs_251251_251252
+#data	  : SingleMuon_Run2015B_v1_run_251244
+#data	  : SingleMuon_Run2015B_v1_run_251560
+#data	  : SingleMuon_Run2015B_v1_run_251561
+#data	  : SingleMuon_Run2015B_v1_run_251562
+#data	  : SingleMuon_Run2015B_v1_runs_251251_251252

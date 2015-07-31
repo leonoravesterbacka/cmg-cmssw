@@ -1,0 +1,33 @@
+met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-2 
+mZ1_wide_log: m2l: 24,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-2
+mZ1_wide: m2l: 24,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+mZ1: m2l: 24,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+mllAFAS: minMllAFAS: 24,0,300 ; XTitle="min Mll AF/AS  [GeV]", Legend='TR', LegendCutoff=1e-2
+mllSFOS: minMllSFOS: 24,0,300 ; XTitle="min Mll SF/OS  [GeV]", Legend='TR', LegendCutoff=1e-2
+mllAFSS: minMllAFSS: 24,0,300 ; XTitle="min Mll AF/SS  [GeV]", Legend='TR', LegendCutoff=1e-2
+pt2l: pt2l: 20,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-2
+dPhi: abs(deltaPhi(LepGood1_phi,LepGood2_phi)): 16,0, 3.2 ; XTitle="|#Delta #phi|",Legend='TL', LegendCutoff=1e-2
+dPhi_log: abs(deltaPhi(LepGood1_phi,LepGood2_phi)): 16,0, 3.2 ; Logy, XTitle="|#Delta #phi|",Legend='TL', LegendCutoff=1e-2
+lep1_pt: LepGood1_pt: 24,0,200; XTitle="Leading lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep1_eta: LepGood1_eta: 24,-2.4,2.4;    XTitle="Leading Lepton #eta", Legend='TR', LegendCutoff=1e-2
+lep1_miniRelIso:     LepGood1_miniRelIso: 24,0,.4; XTitle="Leading Lepton Isolation", LegendCutoff=1e-2
+lep1_miniRelIso_log: LepGood1_miniRelIso: 24,0,.4; Logy, XTitle="Leading Lepton Isolation", LegendCutoff=1e-2
+lep1_RelIso:     LepGood1_relIso03: 24,0,.4; XTitle="Leading Lepton Isolation", LegendCutoff=1e-2
+lep1_RelIso_log: LepGood1_relIso03: 24,0,.4; Logy, XTitle="Leading Lepton Isolation", LegendCutoff=1e-2
+lep1_jetPtRel:  LepGood1_jetPtRel: 24,0,20; XTitle="Leading Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep1_jetPtRatio: LepGood1_jetPtRatio: 24,0,1.2; XTitle="Leading Lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+lep1_sip3d:       LepGood1_sip3d: 25,0,10 ; XTitle="Leading Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep1_sip3d_log:       LepGood1_sip3d: 25,0,10 ; XTitle="Leading Lepton SIP_{3D}", Legend='TR',Logy,  LegendCutoff=1e-2
+lep2_pt: LepGood2_pt: 24,0,200; XTitle="Subleading lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep2_eta: LepGood2_eta: 24,-2.4,2.4;    XTitle="Subleading Lepton #eta", Legend='TR', LegendCutoff=1e-2
+lep2_sip3d_log:   LepGood2_sip3d: 25,0,10 ; Logy, XTitle="Subleading Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep2_miniRelIso:     LepGood2_miniRelIso: 24,0,.4; XTitle="Subleading Lepton Isolation", LegendCutoff=1e-2
+lep2_miniRelIso_log: LepGood2_miniRelIso: 24,0,.4; Logy, XTitle="Subleading Lepton Isolation", LegendCutoff=1e-2
+lep2_RelIso:     LepGood2_relIso03: 24,0,.4; XTitle="Subleading Lepton Isolation", LegendCutoff=1e-2
+lep2_RelIso_log: LepGood2_relIso03: 24,0,.4; Logy, XTitle="Subleading Lepton Isolation", LegendCutoff=1e-2
+lep2_jetPtRel:  LepGood2_jetPtRel: 24,0,20; XTitle="Subleading Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep2_jetPtRatio: LepGood2_jetPtRatio: 24,0,1.2; XTitle="Subleading Lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+lep2_sip3d:       LepGood2_sip3d: 25,0,10 ; XTitle="Subleading Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep2_sip3d_log:   LepGood2_sip3d: 25,0,10 ; Logy, XTitle="Subleading Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+mt_2: mt_2(LepGood1_pt, LepGood1_phi, met_pt, met_phi): 20,0,300; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-2
+

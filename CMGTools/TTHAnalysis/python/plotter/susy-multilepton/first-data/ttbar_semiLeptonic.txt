@@ -1,8 +1,17 @@
-trigger: HLT_SingleMu_8TeV
-2L: nLepGood == 2 
-lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0  
-nJet/bJet: nJet40 == 4 && nBJetMedium25 == 1 || nJet40 == 4 && nBJetMedium25 == 2 || nJet40 == 3 && nBJetMedium25 == 1 || nJet40 == 3 && nBJetMedium25 == 2     
+trigger: HLT_SingleEl50ns || HLT_SingleMu50ns
+2L: nLepGood == 2
 lep2_pt10: nLepGood10 == 2
+same-sign: LepGood1_charge*LepGood2_charge > 0
+lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0 
+lep mu id: LepGood1_mediumMuonId > 0  
+lep el id: ( LepGood1_mvaIdPhys14 >=0.73+(0.57-0.73)*(abs(LepGood1_eta)>0.8)+(+0.05-0.57)*(abs(LepGood1_eta)>1.479) || abs(LepGood1_pdgId) == 13) 
+lep dxy: LepGood1_sip3d < 4  
+ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits == 0)) 
+#el: abs(LepGood2_pdgId)== 11
+mu: abs(LepGood2_pdgId)== 13 
+tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11)  
+lep_tight: ((abs(LepGood1_pdgId) == 11 && LepGood1_pt > 30 ) || ( abs(LepGood1_pdgId) == 13  && LepGood1_pt > 20 ) )&& abs(LepGood1_eta) < 2.1  
+nJet/bJet: nJet40 == 4 && nBJetMedium25 == 1 || nJet40 == 4 && nBJetMedium25 == 2 || nJet40 == 3 && nBJetMedium25 == 1 || nJet40 == 3 && nBJetMedium25 == 2     
 
 
 
