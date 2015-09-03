@@ -1,0 +1,18 @@
+trigger : HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG|| HLT_SingleMu50ns || HLT_SingleEl50ns 
+2L AF/SS: nLepGood >= 2 &&  LepGood1_charge*LepGood2_charge > 0
+lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) + multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood2_jetPtRel,2) == 1
+lep mu id: LepGood1_mediumMuonId > 0 && LepGood2_mediumMuonId > 0
+lep dxy: max(LepGood1_sip3d,LepGood2_sip3d) < 4
+ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits == 0)) && \
+          (abs(LepGood2_pdgId) == 13 || (LepGood2_convVeto && LepGood2_lostHits == 0))
+tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) && LepGood2_tightCharge > (abs(LepGood2_pdgId) == 11)
+pt2010 : LepGood1_pt>20 && LepGood2_pt>10
+nJet40: nJet40 >= 2
+nBJetMedium25=0: nBJetMedium25==0 
+nBJetMedium25=1: nBJetMedium25==1 
+nBJetMedium25=2: nBJetMedium25>=2 
+ht : htJet40j > 80
+met : met_pt > 30 || htJet40j > 500
+fake_electron: abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 || abs(LepGood2_pdgId) == 11 && multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood1_jetPtRel,2) == 0
+fake_muon: abs(LepGood1_pdgId) == 13 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 || abs(LepGood2_pdgId) == 13 && multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood1_jetPtRel,2) == 0
+mvaIDel: (LepGood1_mvaIdPhys14 >=0.73+(0.57-0.73)*(abs(LepGood1_eta)>0.8)+(+0.05-0.57)*(abs(LepGood1_eta)>1.479) && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 1 ) || (LepGood2_mvaIdPhys14 >=0.73+(0.57-0.73)*(abs(LepGood2_eta)>0.8)+(+0.05-0.57)*(abs(LepGood2_eta)>1.479) && multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood2_jetPtRel,2) == 1 )

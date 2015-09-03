@@ -1,3 +1,4 @@
+filters : hbheFilterNew50ns==1 && Flag_CSCTightHaloFilter==1 && Flag_eeBadScFilter==1
 Trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG
 3L: nLepGood == 3 
 SF/OS: LepGood1_pdgId == -LepGood2_pdgId
@@ -14,8 +15,8 @@ lep3_pt10: nLepGood10 == 3
 #tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) && LepGood2_tightCharge > (abs(LepGood2_pdgId) == 11)
 mll > 12: minMllAFAS > 12
 Z peak: abs(mZ1-91.2) < 15
-mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi) < 55
-met: met_pt < 60
+mt_2: mt_2(LepGood3_pt, LepGood3_phi, metNoHF_pt, metNoHF_phi) < 55
+met: metNoHF_pt < 60
 
 
 

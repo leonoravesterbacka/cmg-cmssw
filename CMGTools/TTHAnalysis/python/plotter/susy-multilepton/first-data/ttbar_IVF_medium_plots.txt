@@ -1,0 +1,30 @@
+sv1_mass: SV_mass[MediumSV_idx[0]]: 20,0,5; XTitle="SV mass"
+sv1_pt_log: SV_pt[MediumSV_idx[0]]: 20,0,100; XTitle="SV pt", Logy
+sv1_pt: SV_pt[MediumSV_idx[0]]: 20,0,100; XTitle="SV pt"
+sv1_sip3d: SV_sip3d[MediumSV_idx[0]]: 20,0.5,30; XTitle="SV sip3d", MoreY=1.5
+sv1_ip3d: SV_ip3d[MediumSV_idx[0]]: 20,0,4; XTitle="SV ip3d", MoreY=1.5
+sv1_sip2d: SV_dxy[MediumSV_idx[0]]/SV_edxy[MediumSV_idx[0]]: 20,0.5,30; XTitle="SV sip2d", MoreY=1.5
+sv1_dxy: SV_dxy[MediumSV_idx[0]]: 20,0,3; XTitle="SV dxy"
+sv1_dxy_Logy: SV_dxy[MediumSV_idx[0]]: 20,0,3; XTitle="SV dxy", Logy
+sv1_cosTheta: SV_cosTheta[MediumSV_idx[0]]: 20,0.98,1; XTitle="SV cosTheta", Legend='TL', XNDiv=505
+sv1_ntracks: SV_ntracks[MediumSV_idx[0]]: 7,0.5,7.5; XTitle="SV ntracks"
+sv1_mva: SV_mva[MediumSV_idx[0]]: 20,0.0,1.0; XTitle="SV MVA", Legend='TL'
+sv1_chi2: SV_chi2[MediumSV_idx[0]]: 20,0.0,20.0; XTitle="SV ", Legend='TL'
+nJet25 : nJet25 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 25)', Legend='TR'
+nJet30 : nJet30 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 30)', Legend='TR'
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR'
+nBJetMedium25 : nBJetMedium25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,medium)', Legend='TR'
+nBJetMedium40 : nBJetMedium40 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR'
+nBJetLoose25  : nBJetLoose25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,loose)', Legend='TR'
+nMVALooseSV:  nMVALooseSV:  5,-0.5,4.5 ; XTitle='N(IVF MVALoose)', Legend='TR'
+nMVAMediumSV: nMVAMediumSV: 5,-0.5,4.5 ; XTitle='N(IVF MVAMedium)', Legend='TR'
+nMVATightSV:  nMVATightSV:  5,-0.5,4.5 ; XTitle='N(IVF MVATight)', Legend='TR'
+htJet40j: htJet40j: 20,0,800; XTitle="H_{T}  [GeV]", Legend='TR'
+nLooseSV:     nLooseSV:     5,-0.5,4.5 ; XTitle='N(IVF Loose)', Legend='TR'
+nMediumSV:    nMediumSV:    5,-0.5,4.5 ; XTitle='N(IVF Medium)', Legend='TR'
+nTightSV:     nTightSV:     5,-0.5,4.5 ; XTitle='N(IVF Tight)', Legend='TR'
+nMVALooseSV:  nMVALooseSV:  5,-0.5,4.5 ; XTitle='N(IVF MVALoose)', Legend='TR'
+nMVAMediumSV: nMVAMediumSV: 5,-0.5,4.5 ; XTitle='N(IVF MVAMedium)', Legend='TR'
+nMVATightSV:  nMVATightSV:  5,-0.5,4.5 ; XTitle='N(IVF MVATight)', Legend='TR'
+worseSip: max(LepGood1_sip3d,LepGood2_sip3d) : 20,0,6; XTitle="Worse SIP"
+worseIso: max(LepGood1_relIso03,LepGood2_relIso03) : 20,0,0.2; XTitle="Worse Iso", Logy

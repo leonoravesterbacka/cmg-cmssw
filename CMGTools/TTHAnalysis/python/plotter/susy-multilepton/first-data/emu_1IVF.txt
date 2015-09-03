@@ -1,0 +1,5 @@
+trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG
+OFOS: nLepGood == 2 && abs(LepGood1_pdgId+LepGood2_pdgId)==2
+lep2_pt10: nLepGood10 == 2
+pt2010: LepGood1_pt>20 && LepGood2_pt>10
+1IVF : nMediumSV == 1

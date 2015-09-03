@@ -1,0 +1,18 @@
+nJet25 : nJet25 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 25)', Legend='TR'
+nJet30 : nJet30 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 30)', Legend='TR'
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR'
+nBJetMedium25 : nBJetMedium25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,medium)', Legend='TR'
+nBJetMedium40 : nBJetMedium40 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR'
+nBJetLoose25  : nBJetLoose25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,loose)', Legend='TR'
+nMVALooseSV:  nMVALooseSV:  5,-0.5,4.5 ; XTitle='N(IVF MVALoose)', Legend='TR'
+nMVAMediumSV: nMVAMediumSV: 5,-0.5,4.5 ; XTitle='N(IVF MVAMedium)', Legend='TR'
+nMVATightSV:  nMVATightSV:  5,-0.5,4.5 ; XTitle='N(IVF MVATight)', Legend='TR'
+htJet40j: htJet40j: 20,0,800; XTitle="H_{T}  [GeV]", Legend='TR'
+nLooseSV:     nLooseSV:     5,-0.5,4.5 ; XTitle='N(IVF Loose)', Legend='TR'
+nMediumSV:    nMediumSV:    5,-0.5,4.5 ; XTitle='N(IVF Medium)', Legend='TR'
+nTightSV:     nTightSV:     5,-0.5,4.5 ; XTitle='N(IVF Tight)', Legend='TR'
+nMVALooseSV:  nMVALooseSV:  5,-0.5,4.5 ; XTitle='N(IVF MVALoose)', Legend='TR'
+nMVAMediumSV: nMVAMediumSV: 5,-0.5,4.5 ; XTitle='N(IVF MVAMedium)', Legend='TR'
+nMVATightSV:  nMVATightSV:  5,-0.5,4.5 ; XTitle='N(IVF MVATight)', Legend='TR'
+worseSip: max(LepGood1_sip3d,LepGood2_sip3d) : 20,0,6; XTitle="Worse SIP"
+worseIso: max(LepGood1_relIso03,LepGood2_relIso03) : 20,0,0.2; XTitle="Worse Iso", Logy

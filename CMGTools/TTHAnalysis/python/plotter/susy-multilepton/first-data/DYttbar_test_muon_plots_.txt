@@ -1,0 +1,13 @@
+met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-4 
+#mZ1_wide_log: mZ1: 24,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-2
+#mZ1_wide: mZ1: 24,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',LegendCutoff=1e-2
+mZ1: mZ1: 24,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+#mZ1_log: mZ1: 24,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Logy, Legend='TR', LegendCutoff=1e-2
+#mZ1_wide_log: mZ1: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-1
+#mZ1_wide: mZ1: 60,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',LegendCutoff=1e-1
+#nBJetMedium25 : nBJetMedium25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,medium)', Legend='TR'
+nBJetMedium40 : nBJetMedium40 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR'
+#nBJetLoose25  : nBJetLoose25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,loose)', Legend='TR'
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR', LegendCutoff=1e-2
+htJet40j: htJet40j: 24,0,800; XTitle="H_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+mu_pt:  if3(( abs(LepGood1_pdgId) == 13 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 || abs(LepGood2_pdgId) == 13 && multiIso_multiWP(LepGood2_pdgId,LepGood2_pt,LepGood2_eta,LepGood2_miniRelIso,LepGood2_jetPtRatio,LepGood1_jetPtRel,2) == 0), LepGood1_pt, LepGood2_pt): 24,0,150; XTitle="Muon p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2

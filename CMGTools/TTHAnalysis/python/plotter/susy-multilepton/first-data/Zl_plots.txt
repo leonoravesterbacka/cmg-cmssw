@@ -1,24 +1,31 @@
-met_log: met_pt: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3 
-met: met_pt: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-3 
-met: met: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-3 
-mZ1_wide_log: m2l: 30,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
-mZ1_wide: m2l: 30,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
-mZ1: m2l: 30,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
-pt2l: pt2l: 30,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
-lep3_pt: LepGood3_pt: 30,0,60; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
-lep3_sip3d: LepGood3_sip3d: 24,0,15 ; XTitle="Third Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
-lep3_eta: LepGood3_eta: 40,-2.5,2.5;    XTitle="Third Lepton #eta", Legend='TR', LegendCutoff=1e-3
-lep3_miniRelIso:     LepGood3_miniRelIso: 24,0,.4; XTitle="Third Lepton Isolation", LegendCutoff=1e-2
-lep3_miniRelIso_log: LepGood3_miniRelIso: 24,0,.4; Logy, XTitle="Third Lepton Isolation", LegendCutoff=0.003
-lep3_dxy:            LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Third Lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
-lep3_dxy_log:        LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Third Lepton d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=1e-3
+#met_log: met_pt: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-3 
+#met: met_pt: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-3 
+#met: met: 30,0,60    ; XTitle="E_{T}^{miss}  [GeV]",LegendCutoff=1e-3 
+#mZ1_wide_log: m2l: 30,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-3
+#mZ1_wide: m2l: 30,0,300 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#mZ1: m2l: 30,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-3
+#pt2l: pt2l: 30,0,200 ; XTitle="di-lepton p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-3
+#lep3_pt: LepGood3_pt: 30,0,60; XTitle="Additional lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-3
+lep3_sip3d: LepGood3_sip3d: 20,0,10 ; XTitle="Additional Lepton SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+lep3_sip3d_log: LepGood3_sip3d: 20,0,10 ; XTitle="Additional Lepton SIP_{3D}",Logy, Legend='TR', LegendCutoff=1e-2
+#lep3_eta: LepGood3_eta: 40,-2.5,2.5;    XTitle="Additional Lepton #eta", Legend='TR', LegendCutoff=1e-3
+#lep3_miniRelIso:     LepGood3_miniRelIso: [0.025,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4]; XTitle="Additional Lepton Isolation", LegendCutoff=1e-2
+#lep3_miniRelIso_log: LepGood3_miniRelIso: [0.025,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4]; Logy, XTitle="Additional Lepton Isolation", LegendCutoff=0.003
+#lep3_miniRelIso:     LepGood3_miniRelIso: 20,0,.4; XTitle="Additional Lepton Isolation", LegendCutoff=1e-2
+#lep3_miniRelIso_log: LepGood3_miniRelIso: 20,0,.4; Logy, XTitle="Additional Lepton Isolation", LegendCutoff=0.003
+#lep3_dxy:            LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Additional Lepton d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-3
+#lep3_dxy_log:        LepGood3_dxy*10000: 24,0.0,300. ; XTitle="Additional Lepton d_{xy} [#mum]",Logy, Legend='TR', LegendCutoff=1e-3
 #lep3_dz:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-3
-#lep3_dz_log:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Third Lepton d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=1e-3
-lep3_jetPtRel:  LepGood3_jetPtRel: 30,0,20; XTitle="Third Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
-lep3_jetPtRatio: LepGood3_jetPtRatio: 30,0,1.2; XTitle="Third Lepton Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-2
-#lep3_SegmentCompatibility: LepGood3_segmentCompatibility: 40,-0.01,0.01; XTitle="Third Lepton Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
-#lep3_mvaIdPhys14: LepGood3_mvaIdPhys14: 40,-2,2; XTitle="Third Lepton mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
-mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi): 30,0,60; XTitle="M_{T}(l_{3}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-3
+#lep3_dz_log:    LepGood3_dz*10000: 24,0.0,600. ; XTitle="Additional Lepton d_{z} [#mum]", Logy, Legend='TR', LegendCutoff=1e-3
+#lep3_jetPtRatio: LepGood3_jetPtRatio: 12,0,1.2; XTitle="Additional Lepton Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep3_jetPtRatio_Raw:    	LepGood3_jetPtRatio_Raw: [0,0.2,0.4,0.6,0.7,0.8,0.9,1.0,1.2]; XTitle="Additional Lepton Jet p_{T} Ratio (Raw)  [GeV]", Legend='TL', LegendCutoff=1e-2
+#lep3_jetPtRatio_LepAwareJEC:    	LepGood3_jetPtRatio_LepAwareJEC: [0,0.2,0.4,0.6,0.7,0.8,0.9,1.0,1.2]; XTitle="Additional Lepton Jet p_{T} Ratio (LepAware JEC) [GeV]", Legend='TL', LegendCutoff=1e-2
+#lep3_jetPtRel:  LepGood3_jetPtRel: [0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10,12]; XTitle="Additional Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep3_jetPtRel:  LepGood3_jetPtRel: 20,0,12; XTitle="Additional Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep3_jetPtRatio_varBinSize: LepGood3_jetPtRatio: [0,0.2,0.4,0.6,0.7,0.8,0.9,1.0,1.2]; XTitle="Additional Lepton Jet p_{T} Ratio  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep3_SegmentCompatibility: LepGood3_segmentCompatibility: 40,-0.01,0.01; XTitle="Additional Lepton Segment-based compatibility", Legend='TR', LegendCutoff=1e-3
+#lep3_mvaIdPhys14: LepGood3_mvaIdPhys14: 40,-2,2; XTitle="Additional Lepton mvaIdPhys14", Legend='TR', LegendCutoff=1e-3
+#mt_2: mt_2(LepGood3_pt, LepGood3_phi, met_pt, met_phi): 30,0,60; XTitle="M_{T}(l_{3}\,E_{T}^{miss}) [GeV]",Legend='TR', LegendCutoff=1e-3
 ##worstRelIso: max(LepGood1_relIso,LepGood2_relIso): 24,0.0,0.4 ; XTitle="Worst lepRelIso", Legend="TR",LegendCutoff=1e-3
 ##mtw_wz3l: mtw_wz3l(pt1, eta1, phi1, m1, pt2, eta2, phi2, m2, pt3, eta3, phi3, m3, mZ1, met, metphi): 18,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV]",Legend='TR', LegendCutoff=1e-3
-
+lep3_jetBTagCSV: LepGood3_jetBTagCSV: 10,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2

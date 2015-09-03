@@ -1,0 +1,11 @@
+trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG
+OFOS: nLepGood == 2 && abs(LepGood1_pdgId+LepGood2_pdgId)==2
+lep2_pt10: nLepGood10 == 2
+sip: max(LepGood1_sip3d,LepGood2_sip3d) < 4    
+relIso1: LepGood1_relIso03 < 0.2 
+relIso2: LepGood2_relIso03 < 0.2 
+pt2515: LepGood1_pt>25 && LepGood2_pt>15
+IVF_2Loose : nLooseSV >= 2
+IVF_Medium : nMVAMediumSV >= 1
+nJet40: nJet40 >= 2
+

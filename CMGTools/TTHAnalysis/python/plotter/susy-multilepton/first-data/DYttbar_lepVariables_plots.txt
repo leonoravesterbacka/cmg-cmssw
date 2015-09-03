@@ -1,0 +1,8 @@
+lep_pt:  if3(multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 , LepGood1_pt, LepGood2_pt): 20,0,120; XTitle="Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_sip:  if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_sip3d, LepGood2_sip3d): 20,0,10; XTitle="Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_miniRelIso: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 16,0,.4; XTitle="Lepton Isolation", LegendCutoff=1e-2
+lep_miniRelIso_log: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 16,0,.4; Logy, XTitle="Lepton Isolation", LegendCutoff=1e-4
+lep_jetPtRel:  if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRel, LepGood2_jetPtRel): 12,0,12; XTitle="Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_jetPtRatio: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 12,0,1.2; XTitle="Lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+lep_jetBTagCSV: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 12,0,1.2; XTitle="jetBTagCSV ", Legend='TL', LegendCutoff=1e-2
+

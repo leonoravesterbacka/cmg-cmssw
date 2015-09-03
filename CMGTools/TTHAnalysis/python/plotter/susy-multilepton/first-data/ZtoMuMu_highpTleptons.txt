@@ -1,0 +1,30 @@
+trigger: HLT_SingleMu50ns || HLT_SingleEl50ns || HLT_MuEG
+#2L SF/OS: nLepGood >= 2 && LepGood1_pdgId == -LepGood2_pdgId
+#muon: abs(LepGood1_pdgId)==13 
+#lep2_pt10: nLepGood10 == 2
+#pt5020: LepGood1_pt>200 && LepGood2_pt>20
+#met: met_pt < 30
+#best mll[60,120] : 60 < mZ1 && mZ1 < 120
+lepton:    if3(LepGood1_pdgId == -13, LepGood1_pt, LepGood2_pt) > 200 && if3(LepGood1_pdgId == -13, LepGood1_relIso03, LepGood2_relIso03) < 0.2 && if3(LepGood1_pdgId == -13 , abs(LepGood1_eta), abs(LepGood2_eta)) <= 2.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

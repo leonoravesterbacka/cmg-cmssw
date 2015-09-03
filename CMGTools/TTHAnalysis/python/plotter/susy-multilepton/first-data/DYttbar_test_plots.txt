@@ -1,10 +1,17 @@
-met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-4 
-mZ1_wide_log: mZ1: 24,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-2
-mZ1_wide: mZ1: 24,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',LegendCutoff=1e-2
-#mZ1: mZ1: 24,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
-#pt2l: pt2l: 24,0,150 ; XTitle="di-muon p_{T}   [GeV]",Legend='TR', LegendCutoff=1e-2
-##thirdl_pt: LepGood3_pt: 24,0,100; XTitle="Third lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
-##mtW1: mt_2(LepGood1_pt,LepGood1_phi,met_pt,met_phi) : 18,0,200; XTitle="M_{T}(l_{1}\,E_{T}^{miss}) [GeV],"Legend='TR', LegendCutoff=1e-2
-##worstRelIso: max(LepGood1_relIso03,LepGood2_relIso03): 24,0.0,0.4 ; XTitle="Worst lepRelIso", Legend="TR",LegendCutoff=1e-2
-##mtw_wz3l: mtw_wz3l(pt1, eta1, phi1, m1, pt2, eta2, phi2, m2, pt3, eta3, phi3, m3, mZ1, met, metphi): 18,0,200; XTitle="M_{T}(W\#rightarrowl lv) [GeV],"Legend='TR', LegendCutoff=1e-2
+met: met: 20,0,150    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-4 
+mZ1: mZ1: 20,0,200 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+nBJetMedium40 : nBJetMedium40 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR'
+nBJetMedium25 : nBJetMedium25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,medium)', Legend='TR'
+nBJetLoose25 : nBJetLoose25 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 25 \,Loose)', Legend='TR'
+nSoftBLoose25 : nSoftBLoose25 : 5,-0.5,4.5 ; XTitle='N(SoftBLoose\, p_{T} > 25 \,Loose)', Legend='TR'
+nSoftBMedium25 : nSoftBMedium25 : 5,-0.5,4.5 ; XTitle='N(nSoftBMedium\, p_{T} > 25 \,Loose)', Legend='TR'
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR', LegendCutoff=1e-2
+htJet40j: htJet40j: 24,0,800; XTitle="H_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep_pt:  if3(multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 , LepGood1_pt, LepGood2_pt): 20,0,120; XTitle="Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep_sip:  if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_sip3d, LepGood2_sip3d): 20,0,10; XTitle="Lepton p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep_miniRelIso: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 16,0,.4; XTitle="Lepton Isolation", LegendCutoff=1e-2
+#lep_miniRelIso_log: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 16,0,.4; Logy, XTitle="Lepton Isolation", LegendCutoff=1e-4
+#lep_jetPtRel:  if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRel, LepGood2_jetPtRel): 12,0,12; XTitle="Lepton Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+#lep_jetPtRatio: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 12,0,1.2; XTitle="Lepton Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+#lep_jetBTagCSV: if3( multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 10,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2
 

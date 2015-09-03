@@ -1,0 +1,11 @@
+met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-4 
+mZ1: mZ1: 24,60,120 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2
+nBJetMedium40 : nBJetMedium40 : 5,-0.5,4.5 ; XTitle='N(bJet\, p_{T} > 40 \,medium)', Legend='TR'
+nJet40 : nJet40 : 8,-0.5,7.5 ; XTitle='N(jet\, p_{T} > 40)', Legend='TR', LegendCutoff=1e-2
+lep_pt:  if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0 , LepGood1_pt, LepGood2_pt): 24,0,150; XTitle="Electron p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_sip:  if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_pt, LepGood2_pt): 24,0,150; XTitle="Electron p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_miniRelIso: if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; XTitle="Electron Isolation", LegendCutoff=1e-2
+lep_miniRelIso_log: if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; Logy, XTitle="Electron Isolation", LegendCutoff=1e-4
+lep_jetPtRel:  if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+lep_jetPtRatio: if3( abs(LepGood1_pdgId) == 11 && multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) == 0, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,1.2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
+

@@ -1,5 +1,5 @@
-trigger: HLT_DoubleMuHT || HLT_DoubleMuHT || HLT_MuEGHT 
-#trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG 
+filters : hbheFilterNew50ns==1 && Flag_CSCTightHaloFilter==1 && Flag_eeBadScFilter==1
+trigger: HLT_DoubleMu || HLT_DoubleEl || HLT_MuEG 
 nL: nLepGood >= 2 
 EE_MuMu_MuE: LepGood1_pdgId == -LepGood2_pdgId || abs(LepGood1_pdgId+LepGood2_pdgId)==2  
 #lep iso: multiIso_multiWP(LepGood1_pdgId,LepGood1_pt,LepGood1_eta,LepGood1_miniRelIso,LepGood1_jetPtRatio,LepGood1_jetPtRel,2) > 0 
@@ -8,10 +8,11 @@ EE_MuMu_MuE: LepGood1_pdgId == -LepGood2_pdgId || abs(LepGood1_pdgId+LepGood2_pd
 #lep dxy: LepGood1_sip3d < 4  
 #ele cuts: (abs(LepGood1_pdgId) == 13 || (LepGood1_convVeto && LepGood1_lostHits == 0)) 
 #tight charge: LepGood1_tightCharge > (abs(LepGood1_pdgId) == 11) 
-pt10: LepGood1_pt>10 && LepGood2_pt>10
+#pt10: LepGood1_pt>10 && LepGood2_pt>10
+pt2515: LepGood1_pt>25 && LepGood2_pt>15
 mll > 12: minMllAFAS > 12
 nJet40: nJet40 >= 2
-htJet40j: htJet40j >= 300
+#htJet40j: htJet40j >= 300
 nBJetMedium25: nBJetMedium25 >= 1 || nBJetLoose25 == 2
 Z peak: abs(mZ1-91.2) > 10
 #el: abs(LepGood2_pdgId)==11

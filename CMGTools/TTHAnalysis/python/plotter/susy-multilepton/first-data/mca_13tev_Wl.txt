@@ -2,21 +2,21 @@
 
 Wjets    : WJetsToLNu_50ns    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4  ;  FillColor=ROOT.kBlue-8, Label="W + j\#rightarrowl"
 Wb       : WJetsToLNu_50ns    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5  ;  FillColor=ROOT.kBlue-5, Label="W + b\#rightarrowl"
-W       : WJetsToLNu_50ns : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kBlue-10, Label="W (no fakes)"
+W       : WJetsToLNu_50ns : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kBlue-10, Label="W (prompt)"
 
 #TT1lj 	 : TTJets_LO_50ns:  xsec   : LepGood1_mcMatchAny <= 1 && LepGood2_mcMatchAny <= 1;  FillColor=ROOT.kGray, Label="tt\, j\#rightarrowl"
 #TT1lb 	 : TTJets_LO_50ns:  xsec   : LepGood1_mcMatchAny >  1 || LepGood2_mcMatchAny >  1;  FillColor=ROOT.kGreen-5, Label="tt\, b\#rightarrowl"
 TTT2l : TTJets_LO_50ns: xsec : LepGood2_mcMatchId !=0;    FillColor=ROOT.kGray,    Label="tt\#rightarrow2l"
-TTTj : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny <= 4 ;    FillColor=ROOT.kGreen-8, Label="tt (j\#rightarrowl)"
-TTTb : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 5;    FillColor=ROOT.kGreen-5,    Label="tt (b\#rightarrowl)"
-#TTTc : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 4;    FillColor=ROOT.kGreen-9,    Label="tt (c\#rightarrowl)"
+TTTj : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny <= 4 ;    FillColor=ROOT.kGreen-8, Label="tt\,j\#rightarrowl)"
+TTTb : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 5;    FillColor=ROOT.kGreen-5,    Label="tt\, b\#rightarrowl"
+#TTTc : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 4;    FillColor=ROOT.kGreen-9,    Label="tt\, c\#rightarrowl"
 
 DY       : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
 DY       : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
-DYjets   : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY (j\#rightarrowl)"
-DYjets   : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY (j\#rightarrowl)"
-DYbb     : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY (b\#rightarrowl)"
-DYbb     : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY (b\#rightarrowl)"
+DYjets   : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
+DYjets   : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
+DYbb     : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
+DYbb     : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
  
 ##VV
 VV   : WZp8_50ns: xsec ; FillColor=ROOT.kViolet

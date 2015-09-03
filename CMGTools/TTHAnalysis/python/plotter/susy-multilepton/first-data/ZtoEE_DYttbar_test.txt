@@ -1,7 +1,10 @@
-trigger: HLT_SingleEl50ns
+trigger : HLT_DoubleEl || HLT_SingleEl50ns
 2L SF/OS: nLepGood >= 2 && LepGood1_pdgId == -LepGood2_pdgId
 electron: abs(LepGood1_pdgId)==11 
-lep2_pt10: nLepGood10 == 2
-pt2515: LepGood1_pt>30 && LepGood2_pt>10
+lep2_pt15: nLepGood15 == 2
+pt2515 : LepGood1_pt>25 && LepGood2_pt>15
 best mll[60,120] : 60 < mZ1 && mZ1 < 120
-tight: LepGood1_pt > 30 && LepGood1_relIso03 < 0.2 && abs(LepGood1_eta) <= 2.1
+tight: LepGood1_pt > 25 && LepGood1_relIso03 < 0.2 && abs(LepGood1_eta) <= 2.1
+
+
+

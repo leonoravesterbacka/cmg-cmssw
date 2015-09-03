@@ -1,6 +1,10 @@
-trigger: HLT_SingleEl50ns || HLT_SingleMu50ns
-2L SF/OS: nLepGood == 2 && LepGood1_pdgId == -LepGood2_pdgId 
-lep2_pt10: nLepGood10 == 2
-pt2010: LepGood1_pt>20 && LepGood2_pt>10
+trigger: HLT_DoubleMu || HLT_DoubleEl|| HLT_MuEG|| HLT_SingleMu50ns || HLT_SingleEl50ns 
+2L SFOS: nLepGood >= 2 && LepGood1_pdgId == -LepGood2_pdgId 
+lep2_pt15: nLepGood15 == 2
+pt2515: LepGood1_pt>25 && LepGood2_pt>15
 best mll[60,120] : 60 < mZ1 && mZ1 < 120
-nJet40: nJet40 == 2
+nJet40: nJet40 >= 2
+
+
+
+
