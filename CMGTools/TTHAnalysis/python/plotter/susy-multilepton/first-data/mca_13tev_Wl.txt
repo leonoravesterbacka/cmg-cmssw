@@ -1,52 +1,60 @@
 #WJets
 
-Wjets    : WJetsToLNu_50ns    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4  ;  FillColor=ROOT.kBlue-8, Label="W + j\#rightarrowl"
-Wb       : WJetsToLNu_50ns    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5  ;  FillColor=ROOT.kBlue-5, Label="W + b\#rightarrowl"
-W       : WJetsToLNu_50ns : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kBlue-10, Label="W (prompt)"
+Wjets    : WJetsToLNu    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4  ;  FillColor=ROOT.kBlue-8, Label="W + j\#rightarrowl"
+Wb       : WJetsToLNu    : xsec : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5  ;  FillColor=ROOT.kBlue-5, Label="W + b\#rightarrowl"
+W       : WJetsToLNu : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kBlue-10, Label="W (prompt)"
 
-#TT1lj 	 : TTJets_LO_50ns:  xsec   : LepGood1_mcMatchAny <= 1 && LepGood2_mcMatchAny <= 1;  FillColor=ROOT.kGray, Label="tt\, j\#rightarrowl"
-#TT1lb 	 : TTJets_LO_50ns:  xsec   : LepGood1_mcMatchAny >  1 || LepGood2_mcMatchAny >  1;  FillColor=ROOT.kGreen-5, Label="tt\, b\#rightarrowl"
-TTT2l : TTJets_LO_50ns: xsec : LepGood2_mcMatchId !=0;    FillColor=ROOT.kGray,    Label="tt\#rightarrow2l"
-TTTj : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny <= 4 ;    FillColor=ROOT.kGreen-8, Label="tt\,j\#rightarrowl)"
-TTTb : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 5;    FillColor=ROOT.kGreen-5,    Label="tt\, b\#rightarrowl"
-#TTTc : TTJets_LO_50ns: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 4;    FillColor=ROOT.kGreen-9,    Label="tt\, c\#rightarrowl"
+#TT1lj 	 : TTJets_LO:  xsec   : LepGood1_mcMatchAny <= 1 && LepGood2_mcMatchAny <= 1;  FillColor=ROOT.kGray, Label="tt\, j\#rightarrowl"
+#TT1lb 	 : TTJets_LO:  xsec   : LepGood1_mcMatchAny >  1 || LepGood2_mcMatchAny >  1;  FillColor=ROOT.kGreen-5, Label="tt\, b\#rightarrowl"
+TTT2l : TTJets_LO: xsec : LepGood2_mcMatchId !=0;    FillColor=ROOT.kGray,    Label="tt\#rightarrow2l"
+TTTj : TTJets_LO: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny <= 4 ;    FillColor=ROOT.kGreen-8, Label="tt\,j\#rightarrowl)"
+TTTb : TTJets_LO: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 5;    FillColor=ROOT.kGreen-5,    Label="tt\, b\#rightarrowl"
+#TTTc : TTJets_LO: xsec : LepGood2_mcMatchId ==0 && LepGood2_mcMatchAny == 4;    FillColor=ROOT.kGreen-9,    Label="tt\, c\#rightarrowl"
 
-DY       : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
-DY       : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
-DYjets   : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
-DYjets   : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
-DYbb     : DYJetsToLL_M10to50_50ns : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
-DYbb     : DYJetsToLL_M50_50ns :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
+DY       : DYJetsToLL_M10to50 : xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
+DY       : DYJetsToLL_M50 :     xsec      : LepGood2_mcMatchId != 0;  FillColor=ROOT.kCyan, Label="DY"
+DYjets   : DYJetsToLL_M10to50 : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
+DYjets   : DYJetsToLL_M50 :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny <= 4;  FillColor=ROOT.kCyan+2, Label="DY\, j\#rightarrowl"
+DYbb     : DYJetsToLL_M10to50 : xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
+DYbb     : DYJetsToLL_M50 :     xsec      : LepGood2_mcMatchId == 0 && LepGood2_mcMatchAny == 5;   FillColor=ROOT.kCyan+3, Label="DY\, b\#rightarrowl"
  
 ##VV
-VV   : WZp8_50ns: xsec ; FillColor=ROOT.kViolet
-VV 	 : ZZp8_50ns: xsec ; FillColor=ROOT.kViolet
-VV 	 : WWTo2L2Nu_50ns: xsec ; FillColor=ROOT.kViolet
+VV   : WZp8: xsec ; FillColor=ROOT.kViolet
+VV 	 : ZZp8: xsec ; FillColor=ROOT.kViolet
+VV 	 : WWTo2L2Nu: xsec ; FillColor=ROOT.kViolet
+
+TW 	 : T_tWch:     xsec; FillColor=ROOT.kGray+2
+TW 	 : TBar_tWch:  xsec; FillColor=ROOT.kGray+2
+
+Single top    : TToLeptons_tch:     xsec ;  FillColor=28
+Single top    : TToLeptons_sch:     xsec ;  FillColor=28
+
+#25ns data
+
+             
+data       :  DoubleEG_Run2015C_v1_runs_254231_254907
+data       :  DoubleMuon_Run2015C_v1_runs_254231_254907
+data       :  MuonEG_Run2015C_v1_runs_254231_254907
+data       :  SingleElectron_Run2015C_v1_runs_254231_254907
+data       :  SingleMuon_Run2015C_v1_runs_254231_254907
 
 
-#
-
-TW 	 : T_tWch_50ns:     xsec; FillColor=ROOT.kGray+2
-TW 	 : TBar_tWch_50ns:  xsec; FillColor=ROOT.kGray+2
-
-Ttch    : TToLeptons_tch_50ns:     xsec ;  FillColor=28
 
 
 
-# --- DATA
-#
-#
-data      :  DoubleEG_Run2015B_17Jul2015_runs_251244_251562
-data      :  DoubleEG_Run2015B_v1_runs_251643_251883
-data      :  DoubleMuon_Run2015B_17Jul2015_runs_251244_251562
-data      :  DoubleMuon_Run2015B_v1_runs_251643_251883
-data      :  MuonEG_Run2015B_17Jul2015_runs_251244_251562
-data      :  MuonEG_Run2015B_v1_runs_251643_251883
-data      :  SingleElectron_Run2015B_17Jul2015_runs_251244_251562
-data      :  SingleElectron_Run2015B_v1_runs_251643_251883
-data      :  SingleMuon_Run2015B_17Jul2015_runs_251244_251562
-data      :  SingleMuon_Run2015B_v1_runs_251643_251883
 
+
+#data      :  DoubleEG_Run2015B_17Jul2015_runs_251244_251562
+#data      :  DoubleEG_Run2015B_v1_runs_251643_251883
+#data      :  DoubleMuon_Run2015B_17Jul2015_runs_251244_251562
+#data      :  DoubleMuon_Run2015B_v1_runs_251643_251883
+#data      :  MuonEG_Run2015B_17Jul2015_runs_251244_251562
+#data      :  MuonEG_Run2015B_v1_runs_251643_251883
+#data      :  SingleElectron_Run2015B_17Jul2015_runs_251244_251562
+#data      :  SingleElectron_Run2015B_v1_runs_251643_251883
+#data      :  SingleMuon_Run2015B_17Jul2015_runs_251244_251562
+#data      :  SingleMuon_Run2015B_v1_runs_251643_251883
+##
 
 
 #data	  :  DoubleEG_Run2015B_v1_run_251244                  

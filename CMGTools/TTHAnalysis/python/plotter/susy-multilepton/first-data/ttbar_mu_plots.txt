@@ -1,0 +1,2 @@
+mu_SegmentCompatibility: LepGood2_segmentCompatibility: 24,0,1; XTitle="Segment-based compatibility", Legend='TL', LegendCutoff=1e-2
+mu_SegmentCompatibility_log: LepGood2_segmentCompatibility: 24,0,1; XTitle="Segment-based compatibility", Logy, Legend='TL', LegendCutoff=1e-2

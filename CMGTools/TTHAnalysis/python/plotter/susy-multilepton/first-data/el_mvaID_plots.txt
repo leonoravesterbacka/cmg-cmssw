@@ -1,0 +1,2 @@
+el_mvaIdPhys14:  LepGood2_mvaIdPhys14: 24,-1,1; XTitle="mvaIdPhys14", Legend='TL', LegendCutoff=1e-2
+el_mvaIdPhys14_log:  LepGood2_mvaIdPhys14: 24,-1,1; XTitle="mvaIdPhys14", Logy, Legend='TL', LegendCutoff=1e-2

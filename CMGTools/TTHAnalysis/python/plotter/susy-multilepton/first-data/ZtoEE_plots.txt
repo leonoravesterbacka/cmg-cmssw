@@ -1,30 +1,32 @@
+#nvtx: nVert: 24,0.5,40.5 ; XTitle="N(vertices)", Legend='TR'
+
 #el_pt:  if3((LepGood1_pdgId)==11, LepGood1_pt, LepGood2_pt): 24,0,150; XTitle="Electron p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
 #el_eta:  if3((LepGood1_pdgId)==11, LepGood1_eta, LepGood2_eta): 24,-2.5,2.5;    XTitle="Electron #eta", Legend='TR', LegendCutoff=1e-2
 ###el_iso: if3((LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 24,0,.4; XTitle="Electron Isolation", LegendCutoff=1e-2
 ###el_iso_log: if3((LepGood1_pdgId)==11, LepGood1_relIso03, LepGood2_relIso03): 20,0,.4; Logy, XTitle="Electron Isolation", LegendCutoff=0
 #el_miniRelIso: if3((LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; XTitle="Electron Isolation", LegendCutoff=1e-2
 #el_miniRelIso_log: if3((LepGood1_pdgId)==11, LepGood1_miniRelIso, LepGood2_miniRelIso): 20,0,.4; Logy, XTitle="Electron Isolation", LegendCutoff=1e-4
-el_sip3d:   if3((LepGood1_pdgId)==11, LepGood2_sip3d, LepGood2_sip3d): 20,0,10 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=1e-2
-el_sip3d_log:   if3((LepGood1_pdgId)==11, LepGood2_sip3d, LepGood2_sip3d): 20,0,10 ; XTitle="Electron SIP_{3D}", Logy,  Legend='TR', LegendCutoff=1e-2
-#el_dxy:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
-#el_dxy_wide:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,500. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
-#el_dxy_log:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 24,0.0,100. ; XTitle="Electron d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-4
-#el_dz:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,500. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
-#el_dz_wide:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,1000. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
-#el_dz_log:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 24,0.0,500. ; XTitle="Electron d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-4
+#el_sip3d:   if3((LepGood1_pdgId)==11, LepGood2_sip3d, LepGood2_sip3d): 40,0,5 ; XTitle="Electron SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+#el_sip3d_log:   if3((LepGood1_pdgId)==11, LepGood2_sip3d, LepGood2_sip3d): 40,0,5 ; XTitle="Electron SIP_{3D}", Logy,  Legend='TR', LegendCutoff=1e-2
+#el_dxy:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 40,0.0,100. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+#el_dxy_wide:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 40,0.0,500. ; XTitle="Electron d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+#el_dxy_log:    if3((LepGood1_pdgId)==11, LepGood1_dxy, LepGood2_dxy)*10000: 40,0.0,100. ; XTitle="Electron d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-4
+#el_dz:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 40,0.0,500. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+#el_dz_wide:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 40,0.0,1000. ; XTitle="Electron d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+#el_dz_log:    if3((LepGood1_pdgId)==11, LepGood1_dz, LepGood2_dz)*10000: 40,0.0,500. ; XTitle="Electron d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-4
 #el_jetPtRel:  if3((LepGood1_pdgId)==11, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Electron Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
-#el_jetPtRatio: if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,1.2; XTitle="Electron Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
-#el_jetPtRatio_Raw:    	if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio_Raw, LepGood2_jetPtRatio_Raw): 24,0,1.2; XTitle="Electron Jet p_{T} Ratio (Raw)  [GeV]", Legend='TL', LegendCutoff=1e-2
-#el_jetPtRatio_LepAwareJEC:    	if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio_LepAwareJEC, LepGood2_jetPtRatio_LepAwareJEC): 24,0,1.2; XTitle="Electron Jet p_{T} Ratio (LepAware JEC) [GeV]", Legend='TL', LegendCutoff=1e-2
-#el_mvaIdPhys14:   if3((LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 24,-1,1; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=1e-2
-#el_mvaIdPhys14_log:   if3((LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 24,-1,1; Logy, XTitle="Electron mvaIdPhys14", Legend='TL', LegendCutoff=1e-4
+el_jetPtRatio: if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,1.2; XTitle="Electron Jet p_{T} Ratio ", Legend='TL', LegendCutoff=1e-2
+el_jetPtRatio_Raw:    	if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio_Raw, LepGood2_jetPtRatio_Raw): 40,0,1.2; XTitle="Electron Jet p_{T} Ratio (Raw)", Legend='TL', LegendCutoff=1e-2
+el_jetPtRatio_LepAwareJEC:    	if3((LepGood1_pdgId)==11, LepGood1_jetPtRatio_LepAwareJEC, LepGood2_jetPtRatio_LepAwareJEC): 40,0,1.2; XTitle="Electron Jet p_{T} Ratio (LepAware JEC)", Legend='TL', LegendCutoff=1e-2
+el_jetPtRatioL1Corr:    	if3((LepGood1_pdgId)==11, LepGood1_jetPtRatioL1Corr, LepGood2_jetPtRatioL1Corr): 40,0,1.2; XTitle="Electron Jet p_{T} (L1Corr)", Legend='TL', LegendCutoff=1e-2
+el_mvaIdPhys14:   if3((LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-1,1; XTitle="Electron mvaIdPhys14", Legend='TR', LegendCutoff=1e-2
+el_mvaIdPhys14_log:   if3((LepGood1_pdgId)==11, LepGood1_mvaIdPhys14, LepGood2_mvaIdPhys14): 40,-1,1; Logy, XTitle="Electron mvaIdPhys14", Legend='TL', LegendCutoff=1e-4
 #el_pixelLayers: if3((LepGood1_pdgId)==11, LepGood1_pixelLayers, LepGood2_pixelLayers): 24,0,10; XTitle="Pixel Layers", Legend='TR', LegendCutoff=1e-2
 #el_trackerLayers: if3((LepGood1_pdgId)==11, LepGood1_trackerLayers, LepGood2_trackerLayers): 24,0,20; XTitle="Tracker Layers", Legend='TL', LegendCutoff=1e-2
 #el_lostHits: if3((LepGood1_pdgId)==11, LepGood1_lostHits, LepGood2_lostHits): 24,-4,4; XTitle="Lost hits on inner track", Legend='TR', LegendCutoff=1e-2
-el_jetBTagCSV: if3((LepGood1_pdgId)==11, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 10,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2
+el_jetBTagCSV: if3((LepGood1_pdgId)==11, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 40,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2
 
 
-#nvtx: nVert: 24,0.5,40.5 ; XTitle="N(vertices)", Legend='TR'
 #met: met: 24,0,200    ; XTitle="E_{T}^{miss}  [GeV]",Logy,LegendCutoff=1e-4 
 #mZ1_wide_log: m2l: 24,0,180 ; XTitle="best m(l^{+}l^{-})  [GeV]",Legend='TR',Logy,LegendCutoff=1e-4
 #mZ1_wide: m2l: 24,40,140 ; XTitle="best m(l^{+}l^{-})  [GeV]", Legend='TR', LegendCutoff=1e-2

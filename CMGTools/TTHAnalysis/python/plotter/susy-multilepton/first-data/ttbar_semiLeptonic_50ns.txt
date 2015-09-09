@@ -1,8 +1,9 @@
 
-trigger : HLT_SingleEl || HLT_SingleMu
+trigger : HLT_SingleEl50ns || HLT_SingleMu50ns
 2L : nLepGood >= 2
 lep2_pt10 : nLepGood10 == 2
 same-sign : LepGood1_charge*LepGood2_charge > 0
+lep MVA : LepGood1_mvaTTH > 0.6
 mllv : minMllAFAS > 12
 miniIso : LepGood1_miniRelIso < 0.05
 sip : LepGood1_sip3d < 4

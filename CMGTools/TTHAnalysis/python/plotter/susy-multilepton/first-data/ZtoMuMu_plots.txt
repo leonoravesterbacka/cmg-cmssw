@@ -1,4 +1,6 @@
 ##MUONS 
+#nvtx: nVert: 24,0.5,40.5 ; XTitle="N(vertices)", Legend='TR'
+
 #mu_pt:             if3((LepGood1_pdgId)==13, LepGood1_pt, LepGood2_pt): 24,0,150; XTitle="Muon p_{T}  [GeV]", Legend='TR', LegendCutoff=1e-2
 #mu_eta:            if3((LepGood1_pdgId)==13, LepGood1_eta, LepGood2_eta): 24,-2.5,2.5;    XTitle="Muon #eta", Legend='TR', LegendCutoff=1e-2
 ###mu_iso:            if3((LepGood1_pdgId)==13, LepGood1_relIso03, LepGood2_relIso03): 24,0,.4; XTitle="Muon Isolation", LegendCutoff=1e-2
@@ -7,28 +9,29 @@
 ###mu_iso_chargedHad_log:        if3((LepGood1_pdgId)==13, LepGood1_miniRelIsoCharged, LepGood2_miniRelIsoCharged): 24,0,.4; Logy, XTitle="Muon Isolation Charged Hadron", LegendCutoff=1e-2
 ###mu_iso_neutralHad:             if3((LepGood1_pdgId)==13, LepGood1_miniRelIsoNeutral, LepGood2_miniRelIsoNeutral): 24,0,.4; XTitle="Muon Isolation Neutral Hadron", LegendCutoff=1e-2
 ###mu_iso__neutralHad_log:        if3((LepGood1_pdgId)==13, LepGood1_miniRelIsoNeutral, LepGood2_miniRelIsoNeutral): 24,0,.4; Logy, XTitle="Muon Isolation Neutral Hadron", LegendCutoff=1e-2
-mu_miniRelIso:    if3((LepGood1_pdgId)==13, LepGood1_miniRelIso, LepGood2_miniRelIso): 24,0,.4; XTitle="Muon Isolation", LegendCutoff=1e-2
-mu_miniRelIso_log:if3((LepGood1_pdgId)==13, LepGood1_miniRelIso, LepGood2_miniRelIso): 24,0,.4; Logy, XTitle="Muon Isolation", LegendCutoff=1e-4
-mu_sip3d:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 20,0,5 ; XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
-mu_sip3d_log:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 20,0,5 ; Logy, XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
-#mu_sip3d_wide:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 24,0,10 ; XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
-#mu_dxy:           if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 24,0.0,100. ; XTitle="Muon d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
-#mu_dxy_wide:           if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 24,0.0,500. ; XTitle="Muon d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
-#mu_dxy_log:       if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 24,0.0,100. ; XTitle="Muon d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-4
-###mu_edxy:       if3((LepGood1_pdgId)==13, abs(LepGood1_edxy), abs(LepGood2_edxy)): 24,0.0,0.1 ; XTitle="Error in Muon d_{xy}" ,  Legend='TR', LegendCutoff=1e-2
-#mu_dz:            if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 24,0.0,600. ; XTitle="Muon d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
-#mu_dz_wide:            if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 24,0.0,1000. ; XTitle="Muon d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
-#mu_dz_log:        if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 24,0.0,600. ; XTitle="Muon d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-4
-mu_jetPtRel:      if3((LepGood1_pdgId)==13, LepGood1_jetPtRel, LepGood2_jetPtRel): 24,0,40; XTitle="Muon Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
-mu_jetPtRatio:    if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 24,0,1.2; XTitle="Muon Jet p_{T} Ratio  [GeV]", Legend='TL', LegendCutoff=1e-2
-#mu_jetPtRatio_Raw:    	if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio_Raw, LepGood2_jetPtRatio_Raw): 24,0,1.2; XTitle="Muon Jet p_{T} Ratio (Raw)  [GeV]", Legend='TL', LegendCutoff=1e-2
-#mu_jetPtRatio_LepAwareJEC:    	if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio_LepAwareJEC, LepGood2_jetPtRatio_LepAwareJEC): 24,0,1.2; XTitle="Muon Jet p_{T} Ratio (LepAware JEC) [GeV]", Legend='TL', LegendCutoff=1e-2
+#mu_miniRelIso:    if3((LepGood1_pdgId)==13, LepGood1_miniRelIso, LepGood2_miniRelIso): 24,0,.4; XTitle="Muon Isolation", LegendCutoff=1e-2
+#mu_miniRelIso_log:if3((LepGood1_pdgId)==13, LepGood1_miniRelIso, LepGood2_miniRelIso): 24,0,.4; Logy, XTitle="Muon Isolation", LegendCutoff=1e-4
+#mu_sip3d:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 40,0,5 ; XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+#mu_sip3d_log:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 40,0,5 ; Logy, XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+#mu_sip3d_wide:         if3((LepGood1_pdgId)==13, LepGood1_sip3d, LepGood2_sip3d): 40,0,10 ; XTitle="Muon SIP_{3D}", Legend='TR', LegendCutoff=1e-2
+#mu_dxy:           if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 40,0.0,100. ; XTitle="Muon d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+#mu_dxy_wide:           if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 400,0.0,500. ; XTitle="Muon d_{xy} [#mum]", Legend='TR', LegendCutoff=1e-2
+#mu_dxy_log:       if3((LepGood1_pdgId)==13, abs(LepGood1_dxy), abs(LepGood2_dxy))*10000: 40,0.0,100. ; XTitle="Muon d_{xy} [#mum]",Logy ,  Legend='TR', LegendCutoff=1e-4
+###mu_edxy:       if3((LepGood1_pdgId)==13, abs(LepGood1_edxy), abs(LepGood2_edxy)): 40,0.0,0.1 ; XTitle="Error in Muon d_{xy}" ,  Legend='TR', LegendCutoff=1e-2
+#mu_dz:            if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 40,0.0,600. ; XTitle="Muon d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+#mu_dz_wide:            if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 40,0.0,1000. ; XTitle="Muon d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
+#mu_dz_log:        if3((LepGood1_pdgId)==13, abs(LepGood1_dz),  abs(LepGood2_dz))*10000: 40,0.0,600. ; XTitle="Muon d_{z} [#mum]",Logy ,Legend='TR', LegendCutoff=1e-4
+#mu_jetPtRel:      if3((LepGood1_pdgId)==13, LepGood1_jetPtRel, LepGood2_jetPtRel): 40,0,40; XTitle="Muon Jet p_{T} Rel  [GeV]", Legend='TR', LegendCutoff=1e-2
+mu_jetPtRatio:    if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio, LepGood2_jetPtRatio): 40,0,1.2; XTitle="Muon Jet p_{T} Ratio", Legend='TL', LegendCutoff=1e-2
+mu_jetPtRatio_Raw:    	if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio_Raw, LepGood2_jetPtRatio_Raw): 40,0,1.2; XTitle="Muon Jet p_{T} Ratio (Raw)", Legend='TL', LegendCutoff=1e-2
+mu_jetPtRatioL1Corr:    	if3((LepGood1_pdgId)==13, LepGood1_jetPtRatioL1Corr, LepGood2_jetPtRatioL1Corr): 40,0,1.2; XTitle="Muon Jet p_{T} (L1Corr)", Legend='TL', LegendCutoff=1e-2
+#mu_jetPtRatio_LepAwareJEC:    	if3((LepGood1_pdgId)==13, LepGood1_jetPtRatio_LepAwareJEC, LepGood2_jetPtRatio_LepAwareJEC): 40,0,1.2; XTitle="Muon Jet p_{T} Ratio (LepAware JEC)", Legend='TL', LegendCutoff=1e-2
 #mu_SegmentCompatibility: if3((LepGood1_pdgId)==13, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 24,0,1; XTitle="Muon Segment-based compatibility", Legend='TR', LegendCutoff=1e-2
 #mu_SegmentCompatibility_log: if3((LepGood1_pdgId)==13, LepGood1_segmentCompatibility, LepGood2_segmentCompatibility): 24,0,1; Logy, XTitle="Muon Segment-based compatibility", Legend='TR', LegendCutoff=1e-2
 #mu_pixelLayers: if3((LepGood1_pdgId)==13, LepGood1_pixelLayers, LepGood2_pixelLayers): 24,0,6; XTitle="Pixel Layers", Legend='TR', LegendCutoff=1e-2
 #mu_trackerLayers: if3((LepGood1_pdgId)==13, LepGood1_trackerLayers, LepGood2_trackerLayers): 24,0,20; XTitle="Tracker Layers", Legend='TL', LegendCutoff=1e-2
 #mu_lostHits: if3((LepGood1_pdgId)==13, LepGood1_lostHits, LepGood2_lostHits): 24,-5,10; XTitle="Lost hits on inner track", Legend='TR', LegendCutoff=1e-2
-mu_jetBTagCSV: if3((LepGood1_pdgId)==13, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 10,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2
+mu_jetBTagCSV: if3((LepGood1_pdgId)==13, LepGood1_jetBTagCSV, LepGood2_jetBTagCSV): 40,0,1; XTitle="CSV btag of nearest jet ", Legend='TR', LegendCutoff=1e-2
 
 
 #mu_delta_dz: abs(LepGood1_dz-LepGood2_dz)*10000: 24,0.0,600. ; XTitle="Muon #Delta d_{z} [#mum]", Legend='TR', LegendCutoff=1e-2
